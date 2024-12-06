@@ -48,7 +48,7 @@ alias \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	p="pacman" \
+	p="pip install" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
@@ -58,3 +58,9 @@ alias \
 	lf="lfub" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
+
+alias \
+ l="ls -cFlah" \
+ gi="git clone https://github.com/xtcedro/invoice_generator.git" \
+ en="python -m venv venv" \
+ at="source venv/bin/activate"
