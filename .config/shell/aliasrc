@@ -60,7 +60,7 @@ alias \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
 alias \
- l="ls -cFlah" \
- gi="git clone https://github.com/xtcedro/invoice_generator.git" \
- en="python -m venv venv" \
- at="source venv/bin/activate"
+      l="ls -cFlah" \
+      gi="git clone       https://github.com/xtcedro/invoice_generator.git" \
+      en="python -m venv venv" \
+      at="source venv/bin/activate"
