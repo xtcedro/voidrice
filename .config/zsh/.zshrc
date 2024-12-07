@@ -82,3 +82,4 @@ bindkey -M visual '^[[P' vi-delete
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 export PATH="$HOME/.local/bin:$PATH"
+neofetch
