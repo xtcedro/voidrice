@@ -64,4 +64,5 @@ alias \
       gi="git clone https://github.com/xtcedro/invoice_generator.git" \
       en="python -m venv venv" \
       at="source venv/bin/activate" \
-      etc="git clone https://github.com/xtcedro/Etc.git"
+      etc="git clone https://github.com/xtcedro/Etc.git" \
+      about="cd $TMP && etc && rm -rf $ABOUT && cp Etc/about.html $ABOUT && rm -rf $GIT
