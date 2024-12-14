@@ -8,6 +8,15 @@ export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
 unsetopt PROMPT_SP 2>/dev/null
 
+# Site map
+export ROOT="/var/www/html"
+export HOMEPAGE="/var/www/html/index.html"
+export ABOUT="/var/www/html/about.html"
+export SERVICES="/var/www/html/services.html"
+export CONTACT="/var/www/html/contact.html"
+export APPOINTMENT="/var/www/html/appointment.html"
+ex
+
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="st"
