@@ -15,10 +15,12 @@ export ABOUT="/var/www/html/about.html"
 export SERVICES="/var/www/html/services.html"
 export CONTACT="/var/www/html/contact.html"
 export APPOINTMENT="/var/www/html/appointment.html"
-ex
+export GIT="/tmp/Etc"
 export STYLE="/var/www/html/assets/css/style.css"
 export ALIAS="$HOME/.config/shell/aliases"
 export TMP="/tmp/"
+
+
 
 # Default programs:
 export EDITOR="nvim"
