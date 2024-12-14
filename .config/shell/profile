@@ -16,6 +16,9 @@ export SERVICES="/var/www/html/services.html"
 export CONTACT="/var/www/html/contact.html"
 export APPOINTMENT="/var/www/html/appointment.html"
 ex
+export STYLE="/var/www/html/assets/css/style.css"
+export ALIAS="$HOME/.config/shell/aliases"
+
 
 # Default programs:
 export EDITOR="nvim"
