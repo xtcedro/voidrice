@@ -63,4 +63,5 @@ alias \
       l="ls -cFlah" \
       gi="git clone https://github.com/xtcedro/invoice_generator.git" \
       en="python -m venv venv" \
-      at="source venv/bin/activate"
+      at="source venv/bin/activate" \
+      etc="git clone https://github.com/xtcedro/Etc.git"
