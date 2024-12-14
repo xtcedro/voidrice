@@ -18,7 +18,7 @@ export APPOINTMENT="/var/www/html/appointment.html"
 ex
 export STYLE="/var/www/html/assets/css/style.css"
 export ALIAS="$HOME/.config/shell/aliases"
-
+export TMP="/tmp/"
 
 # Default programs:
 export EDITOR="nvim"
