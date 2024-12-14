@@ -7,7 +7,14 @@ cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources	# Colors, themes and variab
 cfb	~/.local/src/dwmblocks/config.h				# dwmblocks: the status bar for dwm
 
 
+
 # These do not update automatically, but on the next new instance of a program:
+sc  $STYLE
+in  $HOMEPAGE
+ab  $ABOUT
+ser $SERVICES
+cn  $CONTACT
+ap  $APPOINTMENT
 
 cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
 cfz	$ZDOTDIR/.zshrc						# zsh (shell) config
