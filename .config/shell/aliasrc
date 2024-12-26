@@ -1,4 +1,4 @@
-#!/bin/sh
+
 
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
@@ -61,8 +61,14 @@ alias \
 
 alias \
       l="ls -cFlah" \
-      gi="git clone https://github.com/xtcedro/invoice_generator.git" \
-      en="python -m venv venv" \
-      at="source venv/bin/activate" \
-      etc="git clone https://github.com/xtcedro/Etc.git" \
-      about="cd $TMP && etc && rm -rf $ABOUT && cp Etc/about.html $ABOUT && rm -rf $GIT
+      etc="git clone git@github.com:xtcedro/Etc.git" \
+	  void="git clone git@github.com:xtcedro/voidrice.git" \
+      rns="sudo systemctl reload nginx" \
+      about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd $ROOT && rns" \
+      about2="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT2 $ABOUT2_ES && cp Etc/about2.html $ABOUT2 && cp Etc/about2_es.html $ABOUT2_ES && rm -rf $GIT && cd $ROOT && rns" \
+      contact="cd $TMP && rm -rf Etc && etc && rm -rf $CONTACT $CONTACT_ES && cp Etc/contact.html $CONTACT && cp Etc/contact_es.html $CONTACT_ES && rm -rf $GIT && cd $ROOT && rns" \
+      home="cd $TMP && rm -rf Etc && etc && rm -rf $HOMEPAGE $HOMEPAGE_ES && cp Etc/index.html $HOMEPAGE && cp Etc/index_es.html $HOMEPAGE_ES && rm -rf $GIT && cd $ROOT && rns" \
+      services="cd $TMP && rm -rf Etc && etc && rm -rf $SERVICES $SERVICES_ES && cp Etc/services.html $SERVICES && cp Etc/services_es.html $SERVICES_ES && rm -rf $GIT && cd $ROOT && rns"\
+      appointments="cd $TMP && rm -rf Etc && etc && rm -rf $APPOINTMENTS $APPOINTMENTS_ES && cp Etc/appointments.html $APPOINTMENTS && cp Etc/appointments_es.html $APPOINTMENTS_ES && rm -rf $GIT && cd $ROOT && rns" \
+      offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd $ROOT && rns" \
+      style="cd $TMP && rm -rf Etc && etc && rm -rf $STYLE && cp Etc/assets/css/style.css $STYLE && rm -rf $GIT && chmod 775 $STYLE && cd $ROOT && rns" \

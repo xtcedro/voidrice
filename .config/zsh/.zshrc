@@ -2,10 +2,25 @@
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}[%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
+
+autoload -Uz vcs_info
+setopt prompt_subst
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%F{yellow}[%b]%f'
+zstyle ':vcs_info:*' enable git
+PS1="%B%{$fg[red]%}[%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}${vcs_info_msg_0_}$%b "
+
+parse_git_status() {
+  git_status=$(git status --porcelain=v1 2>/dev/null)
+  if [[ -n $git_status ]]; then
+    echo "%F{red}✗%f"
+  else
+    echo "%F{green}✓%f"
+  fi
+}
 
 # History in cache directory:
 HISTSIZE=10000000
@@ -82,4 +97,4 @@ bindkey -M visual '^[[P' vi-delete
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
 export PATH="$HOME/.local/bin:$PATH"
-neofetch
+plugins=(git)
