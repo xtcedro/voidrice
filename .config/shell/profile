@@ -35,7 +35,7 @@ export OFFERS_ES="/var/www/html/html/offer_es.html"
 # CSS File
 export STYLE="/var/www/html/assets/css/style.css"
 
-export ALIAS="$HOME/.config/shell/aliases"
+export ALIAS="$HOME/.config/shell/aliasrc"
 export TMP="/tmp/"
 export STYLE="/var/www/html/assets/css/style.css"
 
