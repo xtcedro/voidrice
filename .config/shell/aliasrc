@@ -72,4 +72,6 @@ alias \
       appointments="cd $TMP && rm -rf Etc && etc && rm -rf $APPOINTMENTS $APPOINTMENTS_ES && cp Etc/appointments.html $APPOINTMENTS && cp Etc/appointments_es.html $APPOINTMENTS_ES && rm -rf $GIT && cd $ROOT && rns" \
       offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd $ROOT && rns" \
       style="cd $TMP && rm -rf Etc && etc && rm -rf $STYLE && cp Etc/assets/css/style.css $STYLE && rm -rf $GIT && chmod 775 $STYLE && cd $ROOT && rns" \
-ga="git add . "
+	  ga="git add . " \
+	  gc="git commit -m" \
+	  gp="git push origin" \
