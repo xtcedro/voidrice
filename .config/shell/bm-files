@@ -11,17 +11,19 @@ cfb	~/.local/src/dwmblocks/config.h				# dwmblocks: the status bar for dwm
 # These do not update automatically, but on the next new instance of a program:
 sc  ~/Etc/assets/css/style.css
 in  ~/Etc/index.html
-ab  ~/Etc/about.html
-abb  ~/Etc/about2.html
-sr ~/Etc/services.html
-cn  ~/Etc/contact.html
-ap  ~/Etc/appointments.html
 ins  ~/Etc/index_es.html
+ab  ~/Etc/about.html
 abs  ~/Etc/about_es.html
+abb  ~/Etc/about2.html
 abbs  ~/Etc/about2_es.html
-srs ~/Etc/services_es.html
-cns  ~/Etc/contact_es.html
+ap  ~/Etc/appointments.html
 aps  ~/Etc/appointments_es.html
+sr ~/Etc/services.html
+srs ~/Etc/services_es.html
+of ~/Etc/offers.html
+ofs ~/Etc/offers_es.html
+cn  ~/Etc/contact.html
+cns  ~/Etc/contact_es.html
 
 cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
 cfz	$ZDOTDIR/.zshrc						# zsh (shell) config
