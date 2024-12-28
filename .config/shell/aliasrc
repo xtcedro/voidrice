@@ -63,6 +63,7 @@ alias \
       l="ls -cFlah" \
       etc="git clone git@github.com:xtcedro/Etc.git" \
 	  void="git clone git@github.com:xtcedro/voidrice.git" \
+	  tire="git clone git@github.com:xtcedro/tire-shop.git" \
       rns="sudo systemctl reload nginx" \
       about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd  && rns" \
       about2="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT2 $ABOUT2_ES && cp Etc/about2.html $ABOUT2 && cp Etc/about2_es.html $ABOUT2_ES && rm -rf $GIT && cd && rns" \
