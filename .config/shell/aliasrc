@@ -76,3 +76,4 @@ alias \
 	  ga="git add . " \
 	  gc="git commit -m" \
 	  gp="git push origin" \
+	  ch="chromium-browser" \
