@@ -24,6 +24,7 @@ of ~/Etc/offers.html
 ofs ~/Etc/offers_es.html
 cn  ~/Etc/contact.html
 cns  ~/Etc/contact_es.html
+ph ~/Etc/assets/php/contact_handler_form.php
 
 cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
 cfz	$ZDOTDIR/.zshrc						# zsh (shell) config
