@@ -32,8 +32,9 @@ set noruler
 set laststatus=0
 set noshowcmd
 set nowrap
-set tabstop=8
-set softtabstop=8
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set colorcolumn=80
 
 " Some basics:
