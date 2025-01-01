@@ -15,7 +15,7 @@ export GIT="/tmp/Etc"
 export ROOT="/var/www/html"
 
 # Site Map
-export HOMEPAGE="/var/www/html/index.php"
+export HOMEPAGE="/var/www/html/index.html"
 export ABOUT="/var/www/html/about.html"
 export ABOUT2="/var/www/html/about2.html"
 export SERVICES="/var/www/html/services.html"
@@ -24,7 +24,7 @@ export APPOINTMENTS="/var/www/html/appointments.html"
 export OFFERS="/var/www/html/offers.html"
 
 # Site Map (Spanish)
-export HOMEPAGE_ES="/var/www/html/index_es.php"
+export HOMEPAGE_ES="/var/www/html/index_es.html"
 export ABOUT_ES="/var/www/html/about_es.html"
 export ABOUT2_ES="/var/www/html/about2_es.html"
 export SERVICES_ES="/var/www/html/services_es.html"
