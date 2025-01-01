@@ -11,8 +11,9 @@ setopt prompt_subst
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%F{yellow}[%b]%f'
 zstyle ':vcs_info:*' enable git
-PS1="%B%{$fg[red]%}[%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}${vcs_info_msg_0_}$%b "
+#PS1="%B%{$fg[red]%}[%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}${vcs_info_msg_0_}$%b "
 
+PS1="%B%F{red}[%F{yellow}[%?]%*%F{green}@%F{blue}%m %F{magenta}%~%F{red}]%f%b$ "
 parse_git_status() {
   git_status=$(git status --porcelain=v1 2>/dev/null)
   if [[ -n $git_status ]]; then
