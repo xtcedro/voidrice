@@ -21,7 +21,7 @@ export ABOUT2="/var/www/html/about2.html"
 export SERVICES="/var/www/html/services.html"
 export CONTACT="/var/www/html/contact.html"
 export APPOINTMENTS="/var/www/html/appointments.html"
-export OFFERS="/var/www/html/html/offer.html"
+export OFFERS="/var/www/html/offers.html"
 
 # Site Map (Spanish)
 export HOMEPAGE_ES="/var/www/html/index_es.html"
@@ -30,7 +30,7 @@ export ABOUT2_ES="/var/www/html/about2_es.html"
 export SERVICES_ES="/var/www/html/services_es.html"
 export CONTACT_ES="/var/www/html/contact_es.html"
 export APPOINTMENTS_ES="/var/www/html/appointments_es.html"
-export OFFERS_ES="/var/www/html/html/offer_es.html"
+export OFFERS_ES="/var/www/html/offer_es.html"
 
 # CSS File
 export STYLE="/var/www/html/assets/css/style.css"
