@@ -1,3 +1,5 @@
+
+
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
@@ -52,10 +54,9 @@ alias \
 	xq="xbps-query" \
 	z="zathura" \
 	ga="git add . " \
-    gc="git commit -m" \
-    gp="git push origin" \
-	gm+"git merge" \
-
+	gc="git commit -m" \
+	gp="git push origin" \
+	gm="git merge" \
 
 alias \
 	lf="lfub" \
@@ -68,13 +69,13 @@ alias \
       void="git clone git@github.com:xtcedro/voidrice.git" \
       tire="git clone git@github.com:xtcedro/tire-shop.git" \
       rns="sudo systemctl reload nginx" \
-      about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd ~/Etc && rns" \
-      about2="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT2 $ABOUT2_ES && cp Etc/about2.html $ABOUT2 && cp Etc/about2_es.html $ABOUT2_ES && rm -rf $GIT && cd ~/Etc && rns" \
-      contact="cd $TMP && rm -rf Etc && etc && rm -rf $CONTACT $CONTACT_ES && cp Etc/contact.html $CONTACT && cp Etc/contact_es.html $CONTACT_ES && rm -rf $GIT && cd ~/Etc && rns" \
-      home="cd $TMP && rm -rf Etc && etc && rm -rf $HOMEPAGE $HOMEPAGE_ES && cp Etc/index.html $HOMEPAGE && cp Etc/index_es.html $HOMEPAGE_ES && rm -rf $GIT && cd ~/Etc && rns" \
-      services="cd $TMP && rm -rf Etc && etc && rm -rf $SERVICES $SERVICES_ES && cp Etc/services.html $SERVICES && cp Etc/services_es.html $SERVICES_ES && rm -rf $GIT && cd ~/Etc && rns"\
-      appointments="cd $TMP && rm -rf Etc && etc && rm -rf $APPOINTMENTS $APPOINTMENTS_ES && cp Etc/appointments.html $APPOINTMENTS && cp Etc/appointments_es.html $APPOINTMENTS_ES && rm -rf $GIT && cd ~/Etc && rns" \
-      offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd ~/Etc && rns" \
+      about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd  && rns" \
+      about2="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT2 $ABOUT2_ES && cp Etc/about2.html $ABOUT2 && cp Etc/about2_es.html $ABOUT2_ES && rm -rf $GIT && cd && rns" \
+      contact="cd $TMP && rm -rf Etc && etc && rm -rf $CONTACT $CONTACT_ES && cp Etc/contact.html $CONTACT && cp Etc/contact_es.html $CONTACT_ES && rm -rf $GIT && cd && rns" \
+      home="cd $TMP && rm -rf Etc && etc && rm -rf $HOMEPAGE $HOMEPAGE_ES && cp Etc/index.html $HOMEPAGE && cp Etc/index_es.html $HOMEPAGE_ES && rm -rf $GIT && cd && rns" \
+      services="cd $TMP && rm -rf Etc && etc && rm -rf $SERVICES $SERVICES_ES && cp Etc/services.html $SERVICES && cp Etc/services_es.html $SERVICES_ES && rm -rf $GIT && cd && rns"\
+      appointments="cd $TMP && rm -rf Etc && etc && rm -rf $APPOINTMENTS $APPOINTMENTS_ES && cp Etc/appointments.html $APPOINTMENTS && cp Etc/appointments_es.html $APPOINTMENTS_ES && rm -rf $GIT && cd && rns" \
+      offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd && rns" \
       style="cd $TMP && rm -rf Etc && etc && rm -rf $STYLE && cp Etc/assets/css/style.css $STYLE && rm -rf $GIT && chmod 775 $STYLE && cd && rns" \
-            ch="chromium-browser" \
-	  dts="ssh -i ~/keys/Milagros.pem admin@3.86.98.53" \
+      ch="chromium-browser" \
+      dts="ssh -i keys/Milagros.pem admin@54.172.221.172" \
