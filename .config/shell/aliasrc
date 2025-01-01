@@ -78,4 +78,5 @@ alias \
       offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd && rns" \
       style="cd $TMP && rm -rf Etc && etc && rm -rf $STYLE && cp Etc/assets/css/style.css $STYLE && rm -rf $GIT && chmod 775 $STYLE && cd && rns" \
       ch="chromium-browser" \
-      dts="ssh -i keys/Milagros.pem admin@54.172.221.172" \
+      dts="ssh -i keys/Milagros.pem admin@domingueztechsolutions.com" \
+      okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
