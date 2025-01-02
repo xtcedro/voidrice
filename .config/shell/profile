@@ -105,5 +105,4 @@ export _JAVA_AWT_WM_NONREPARENTING=1      # Fix for Java applications in dwm
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys "$XDG_DATA_HOME/larbs/ttymaps.kmap" 2>/dev/null
 neofetch
-eval "$(ssh-agent -s)"
-ssh -T git@github.com
+source ~/.config/zsh/.zshrc
