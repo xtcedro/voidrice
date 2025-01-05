@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+sudo apt update -yy
+sudo apt dist-upgrade -yy
+sudo apt full-update -yy
+
+sudo apt install \
+fail2ban ufw nginx-full texlive-full neofetch \
+zsh build-essential fzf git neovim unattended-upgrades -yy \
+
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 8080
+sudo ufw allow 80
+sudo ufw allow 22
+sudo ufw allow ssh
+sudo ufw allow 'Nginx Full'
+
+sudo nano /etc/ssh/sshd_config
+
+sudo passwd admin
+chsh
+
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+
+rm -rf .bash*
+rm -rf .profile
+
+ln -s .config/shell/profile .zprofile
+ln -s .config/zsh/.zshrc .zshrc
+
+exit
