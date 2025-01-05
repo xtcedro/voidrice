@@ -67,7 +67,8 @@ alias \
       l="ls -cFlah" \
       etc="git clone git@github.com:xtcedro/Etc.git" \
       void="git clone git@github.com:xtcedro/voidrice.git" \
-      tire="git clone git@github.com:xtcedro/tire-shop.git" \
+      tech="git clone git@github.com:xtcedro/tech-solutions.git" \
+      roof="git clone git@github.com:xtcedro/roofiing-company.git" \
       rns="sudo systemctl reload nginx" \
       about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd ~/Etc  && rns" \
       about2="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT2 $ABOUT2_ES && cp Etc/about2.html $ABOUT2 && cp Etc/about2_es.html $ABOUT2_ES && rm -rf $GIT && cd ~/Etc && rns" \
@@ -80,3 +81,4 @@ alias \
       ch="chromium-browser" \
       dts="ssh -i keys/Milagros.pem admin@domingueztechsolutions.com" \
       okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
+      ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
