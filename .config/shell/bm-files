@@ -7,7 +7,6 @@ cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources	# Colors, themes and variab
 cfb	~/.local/src/dwmblocks/config.h				# dwmblocks: the status bar for dwm
 
 # Files for Dominguez Tech Solutionso
-
 sc  ~/DominguezTS/assets/css/style.css
 in  ~/DominguezTS/index.html
 ins  ~/DominguezTS/index_es.html
@@ -22,8 +21,28 @@ gas ~/DominguezTS/gallery_es.html
 cn  ~/DominguezTS/contact.html
 cns  ~/DominguezTS/contact_es.html
 
-# Files for Tito's Tire Shop
+# Files for Heavenly Roofing Company
+sc  ~/roofing-company/assets/css/style.css
+rin  ~/roofing-company/index.html
+rins  ~/roofing-company/index_es.html
+rab  ~/roofing-company/about.html
+rabs  ~/roofing-company/about_es.html
+rsr ~/roofing-company/services.html
+rsrs ~/roofing-company/services_es.html
+rga ~/roofing-company/gallery.html
+rgas ~/roofing-company/gallery_es.html
+rcn  ~/roofing-company/contact.html
+rcns  ~/roofing-company/contact_es.html
 
+# Files for OK DEVS
+oin ~/okdevs/index.html
+oins ~/okdevs/index_es.html
+oab ~/okdevs/about.html
+oabs ~/okdevs/about_es.html
+ole ~/okdevs/letter.html
+oles ~/okdevs/letter_es.html
+
+# Files for Tito's Tire Shop
 tsc  ~/tire-shop/assets/css/style.css
 tin  ~/tire-shop/index.html
 tins  ~/tire-shop/index_es.html
@@ -31,6 +50,8 @@ tab  ~/tire-shop/about.html
 tabs  ~/tire-shop/about_es.html
 tsr ~/tire-shop/services.html
 tsrs ~/tire-shop/services_es.html
+tga ~/tire-shop/gallery.html
+tgas ~/tire-shop/gallery_es.html
 tcn  ~/tire-shop/contact.html
 tcns  ~/tire-shop/contact_es.html
 
