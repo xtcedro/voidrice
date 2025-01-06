@@ -67,7 +67,7 @@ alias \
       l="ls -cFlah" \
       etc="git clone git@github.com:xtcedro/Etc.git" \
       void="git clone git@github.com:xtcedro/voidrice.git" \
-      tech="git clone git@github.com:xtcedro/tech-solutions.git" \
+      tech="git clone git@github.com:xtcedro/DominguezTS.git" \
       roof="git clone git@github.com:xtcedro/roofiing-company.git" \
       rns="sudo systemctl reload nginx" \
       about="cd $TMP && rm -rf Etc && etc && rm -rf $ABOUT $ABOUT_ES && cp Etc/about.html $ABOUT && cp Etc/about_es.html $ABOUT_ES && rm -rf $GIT && cd ~/Etc  && rns" \
@@ -79,6 +79,6 @@ alias \
       offers="cd $TMP && rm -rf Etc && etc && rm -rf $OFFERS $OFFERS_ES && cp Etc/offers.html $OFFERS && cp Etc/offers_es.html $OFFERS_ES && rm -rf $GIT && cd ~/Etc && rns" \
       style="cd $TMP && rm -rf Etc && etc && rm -rf $STYLE && cp Etc/assets/css/style.css $STYLE && rm -rf $GIT && chmod 775 $STYLE && cd ~/Etc && rns" \
       ch="chromium-browser" \
-      dts="ssh -i keys/Milagros.pem admin@domingueztechsolutions.com" \
+      dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
       okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
       ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
