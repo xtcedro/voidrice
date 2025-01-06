@@ -22,7 +22,7 @@ cn  ~/DominguezTS/contact.html
 cns  ~/DominguezTS/contact_es.html
 
 # Files for Heavenly Roofing Company
-sc  ~/roofing-company/assets/css/style.css
+rsc  ~/roofing-company/assets/css/style.css
 rin  ~/roofing-company/index.html
 rins  ~/roofing-company/index_es.html
 rab  ~/roofing-company/about.html
