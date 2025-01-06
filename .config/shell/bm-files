@@ -52,6 +52,8 @@ tsr ~/tire-shop/services.html
 tsrs ~/tire-shop/services_es.html
 tga ~/tire-shop/gallery.html
 tgas ~/tire-shop/gallery_es.html
+ttr ~/tire-shop/tire-recommendation.html
+ttrs ~/tire-shop/tire-recommendation_es.html
 tcn  ~/tire-shop/contact.html
 tcns  ~/tire-shop/contact_es.html
 
