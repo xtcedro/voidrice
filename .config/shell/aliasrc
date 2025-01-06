@@ -74,3 +74,4 @@ alias \
       dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
       okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
       ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
+	  voidupdate="rm -rf ~/.config && cd $TMP && void && cp -r voidrice/.config ~/.config && rm -rf voidrice && cd" \

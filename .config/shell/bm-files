@@ -8,19 +8,19 @@ cfb	~/.local/src/dwmblocks/config.h				# dwmblocks: the status bar for dwm
 
 # Files for Dominguez Tech Solutionso
 
-sc  ~/tech-solutions/assets/css/style.css
-in  ~/tech-solutions/index.html
-ins  ~/tech-solutions/index_es.html
-ab  ~/tech-solutions/about.html
-abs  ~/tech-solutions/about_es.html
-abb  ~/tech-solutions/about2.html
-abbs  ~/tech-solutions/about2_es.html
-sr ~/tech-solutions/services.html
-srs ~/tech-solutions/services_es.html
-of ~/tech-solutions/offers.html
-ofs ~/tech-solutions/offers_es.html
-cn  ~/tech-solutions/contact.html
-cns  ~/tech-solutions/contact_es.html
+sc  ~/DominguezTS/assets/css/style.css
+in  ~/DominguezTS/index.html
+ins  ~/DominguezTS/index_es.html
+ab  ~/DominguezTS/about.html
+abs  ~/DominguezTS/about_es.html
+abb  ~/DominguezTS/about2.html
+abbs  ~/DominguezTS/about2_es.html
+sr ~/DominguezTS/services.html
+srs ~/DominguezTS/services_es.html
+ga ~/DominguezTS/gallery.html
+gas ~/DominguezTS/gallery_es.html
+cn  ~/DominguezTS/contact.html
+cns  ~/DominguezTS/contact_es.html
 
 # Files for Tito's Tire Shop
 
@@ -29,17 +29,10 @@ tin  ~/tire-shop/index.html
 tins  ~/tire-shop/index_es.html
 tab  ~/tire-shop/about.html
 tabs  ~/tire-shop/about_es.html
-tabb  ~/tire-shop/about2.html
-tabbs  ~/tire-shop/about2_es.html
-tap  ~/tire-shop/appointments.html
-taps  ~/tire-shop/appointments_es.html
 tsr ~/tire-shop/services.html
 tsrs ~/tire-shop/services_es.html
-tof ~/tire-shop/offers.html
-tofs ~/tire-shop/offers_es.html
 tcn  ~/tire-shop/contact.html
 tcns  ~/tire-shop/contact_es.html
-tph ~/tire-shop/assets/php/contact_form_handler.php
 
 # These do not update automatically, but on the next new instance of a program:
 
