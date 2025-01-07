@@ -74,3 +74,9 @@ cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler	# nsxiv (image view
 
 # Alias file in voidrice
 va voidrice/.config/shell/aliasrc
+
+# Profile file in voidrice
+pr voidrice/.config/shell/profile
+
+# Zshrc file in voidrice
+zr voidrice/.config/zsh/.zshrc
