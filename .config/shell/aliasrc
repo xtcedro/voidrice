@@ -71,6 +71,7 @@ alias \
       okdev="git clone git@github.com:xtcedro/okdevs.git" \
       tire="git clone git@github.com:xtcedro/tire-shop.git" \
       roof="git clone git@github.com:xtcedro/roofing-company.git" \
+      aptt="git clone git@github.com:xtcedro/appointment-tracker.git" \
 	  dtsupdate="cd $TMP && tech && rm -rf $ROOT/* && rm -rf DominguezTS/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd && rns" \
 	  okdupdate="cd $TMP && okdev && rm -rf $ROOT/* && rm -rf okdevs/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns" \
       dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
