@@ -16,8 +16,8 @@ abb  ~/DominguezTS/about2.html
 abbs  ~/DominguezTS/about2_es.html
 sr ~/DominguezTS/services.html
 srs ~/DominguezTS/services_es.html
-ga ~/DominguezTS/gallery.html
-gas ~/DominguezTS/gallery_es.html
+gal ~/DominguezTS/gallery.html
+gals ~/DominguezTS/gallery_es.html
 cn  ~/DominguezTS/contact.html
 cns  ~/DominguezTS/contact_es.html
 
@@ -35,7 +35,7 @@ rcn  ~/roofing-company/contact.html
 rcns  ~/roofing-company/contact_es.html
 
 # Files for OK DEVS
-osc ~/okdevs/assets/style.css
+osc ~/okdevs/assets/css/style.css
 oin ~/okdevs/index.html
 oins ~/okdevs/index_es.html
 oab ~/okdevs/about.html
