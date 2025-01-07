@@ -1,10 +1,14 @@
 # These files automatically update when edited/saved in vim:
 
-# keys	filename				description
+# keys	filename			                        	description
 bf	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files	# This file, a list of bookmarked files
 bd	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs		# A list of bookmarked directories similar to this file
 cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources	# Colors, themes and variables for X11
-cfb	~/.local/src/dwmblocks/config.h				# dwmblocks: the status bar for dwm
+cfb	~/.local/src/dwmblocks/config.h			         	# dwmblocks: the status bar for dwm
+
+
+vbf	voidrice/.config/shell/bm-files	# This file is the bm-files in voidrice
+vbd	voidrice/.config}/shell/bm-dirs	# This file is the bm-dirs in voidrice
 
 # Files for Dominguez Tech Solutionso
 sc  ~/DominguezTS/assets/css/style.css
@@ -66,8 +70,8 @@ cfp	${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile		# profile file for login se
 cfm	${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc		# mutt (email client) config
 cfn	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config	# newsboat (RSS reader)
 cfu	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls		# RSS urls for newsboat
-cfmb	${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings	# ncmpcpp (music player) keybinds file
-cfmc	${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config	# ncmpcpp (music player) config
+cfmb ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings	# ncmpcpp (music player) keybinds file
+cfmc ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config	# ncmpcpp (music player) config
 cfl	${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc		# lf (file browser) config
 cfL	${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope		# lf's scope/preview file
 cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler	# nsxiv (image viewer) key/script handler
