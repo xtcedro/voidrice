@@ -59,7 +59,6 @@ tcn  ~/tire-shop/contact.html
 tcns  ~/tire-shop/contact_es.html
 
 # These do not update automatically, but on the next new instance of a program:
-
 cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
 cfz	$HOME/.config/zsh/.zshrc				# zsh (shell) config
 cfa	${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc		# aliases used by zsh (and potentially other shells)
@@ -72,3 +71,6 @@ cfmc	${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config	# ncmpcpp (music player) c
 cfl	${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc		# lf (file browser) config
 cfL	${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope		# lf's scope/preview file
 cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler	# nsxiv (image viewer) key/script handler
+
+# Alias file in voidrice
+va voidrice/.config/shell/aliasrc
