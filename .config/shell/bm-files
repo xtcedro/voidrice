@@ -7,8 +7,14 @@ cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources	# Colors, themes and variab
 cfb	~/.local/src/dwmblocks/config.h			         	# dwmblocks: the status bar for dwm
 
 
-vbf	voidrice/.config/shell/bm-files	# This file is the bm-files in voidrice
-vbd	voidrice/.config}/shell/bm-dirs	# This file is the bm-dirs in voidrice
+vbf	voidrice/.config/shell/bm-files	            # This file is the bm-files in voidrice
+vbd	voidrice/.config}/shell/bm-dirs	            # This file is the bm-dirs in voidrice
+vba	voidrice/.config/shell/aliasrc              # This file is the aliasrc in voidrice
+vbz	voidrice/.config/zsh/.zshrc			     	# This file is the zshrc in voidrice
+
+sql	/var/www/backend/schema.sql					# This file is the schema.sql
+sjs	/var/www/html/server.js                 	# This file is the schema.sql
+sql	/var/www/html/public/assets/js/script.js  	# This file is the schema.sql
 
 # Files for Dominguez Tech Solutionso
 sc  ~/DominguezTS/public/assets/css/style.css
