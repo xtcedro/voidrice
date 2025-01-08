@@ -14,7 +14,7 @@ vbz	voidrice/.config/zsh/.zshrc			     	# This file is the zshrc in voidrice
 
 sql	/var/www/backend/schema.sql					# This file is the schema.sql
 sjs	/var/www/html/server.js                 	# This file is the schema.sql
-sql	/var/www/html/public/assets/js/script.js  	# This file is the schema.sql
+scs	/var/www/html/public/assets/js/script.js  	# This file is the schema.sql
 
 # Files for Dominguez Tech Solutionso
 sc  ~/DominguezTS/public/assets/css/style.css
