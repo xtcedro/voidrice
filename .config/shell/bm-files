@@ -11,56 +11,56 @@ vbf	voidrice/.config/shell/bm-files	# This file is the bm-files in voidrice
 vbd	voidrice/.config}/shell/bm-dirs	# This file is the bm-dirs in voidrice
 
 # Files for Dominguez Tech Solutionso
-sc  ~/DominguezTS/assets/css/style.css
-in  ~/DominguezTS/index.html
-ins  ~/DominguezTS/index_es.html
-ab  ~/DominguezTS/about.html
-abs  ~/DominguezTS/about_es.html
-abb  ~/DominguezTS/about2.html
-abbs  ~/DominguezTS/about2_es.html
-sr ~/DominguezTS/services.html
-srs ~/DominguezTS/services_es.html
-gal ~/DominguezTS/gallery.html
-gals ~/DominguezTS/gallery_es.html
-cn  ~/DominguezTS/contact.html
-cns  ~/DominguezTS/contact_es.html
+sc  ~/DominguezTS/public/assets/css/style.css
+in  ~/DominguezTS/public/index.html
+ins  ~/DominguezTS/public/index_es.html
+ab  ~/DominguezTS/public/about.html
+abs  ~/DominguezTS/public/about_es.html
+abb  ~/DominguezTS/public/about2.html
+abbs  ~/DominguezTS/public/about2_es.html
+sr ~/DominguezTS/public/services.html
+srs ~/DominguezTS/public/services_es.html
+gal ~/DominguezTS/public/gallery.html
+gals ~/DominguezTS/public/gallery_es.html
+cn  ~/DominguezTS/public/contact.html
+cns  ~/DominguezTS/public/contact_es.html
 
 # Files for Heavenly Roofing Company
-rsc  ~/roofing-company/assets/css/style.css
-rin  ~/roofing-company/index.html
-rins  ~/roofing-company/index_es.html
-rab  ~/roofing-company/about.html
-rabs  ~/roofing-company/about_es.html
-rsr ~/roofing-company/services.html
-rsrs ~/roofing-company/services_es.html
-rga ~/roofing-company/gallery.html
-rgas ~/roofing-company/gallery_es.html
-rcn  ~/roofing-company/contact.html
-rcns  ~/roofing-company/contact_es.html
+rsc  ~/roofing-company/public/assets/css/style.css
+rin  ~/roofing-company/public/index.html
+rins  ~/roofing-company/public/index_es.html
+rab  ~/roofing-company/public/about.html
+rabs  ~/roofing-company/public/about_es.html
+rsr ~/roofing-company/public/services.html
+rsrs ~/roofing-company/public/services_es.html
+rga ~/roofing-company/public/gallery.html
+rgas ~/roofing-company/public/gallery_es.html
+rcn  ~/roofing-company/public/contact.html
+rcns  ~/roofing-company/public/contact_es.html
 
 # Files for OK DEVS
-osc ~/okdevs/assets/css/style.css
-oin ~/okdevs/index.html
-oins ~/okdevs/index_es.html
-oab ~/okdevs/about.html
-oabs ~/okdevs/about_es.html
-ole ~/okdevs/letter.html
-oles ~/okdevs/letter_es.html
+osc ~/okdevs/public/assets/css/style.css
+oin ~/okdevs/public/index.html
+oins ~/okdevs/public/index_es.html
+oab ~/okdevs/public/about.html
+oabs ~/okdevs/public/about_es.html
+ole ~/okdevs/public/letter.html
+oles ~/okdevs/public/letter_es.html
 
 # Files for Tito's Tire Shop
-tsc  ~/tire-shop/assets/css/style.css
-tin  ~/tire-shop/index.html
-tins  ~/tire-shop/index_es.html
-tab  ~/tire-shop/about.html
-tabs  ~/tire-shop/about_es.html
-tsr ~/tire-shop/services.html
-tsrs ~/tire-shop/services_es.html
-tga ~/tire-shop/gallery.html
-tgas ~/tire-shop/gallery_es.html
-ttr ~/tire-shop/tire-recommendation.html
-ttrs ~/tire-shop/tire-recommendation_es.html
-tcn  ~/tire-shop/contact.html
-tcns  ~/tire-shop/contact_es.html
+tsc  ~/tire-shop/public/assets/css/style.css
+tin  ~/tire-shop/public/index.html
+tins  ~/tire-shop/public/index_es.html
+tab  ~/tire-shop/public/about.html
+tabs  ~/tire-shop/public/about_es.html
+tsr ~/tire-shop/public/services.html
+tsrs ~/tire-shop/public/services_es.html
+tga ~/tire-shop/public/gallery.html
+tgas ~/tire-shop/public/gallery_es.html
+ttr ~/tire-shop/public/tire-recommendation.html
+ttrs ~/tire-shop/public/tire-recommendation_es.html
+tcn  ~/tire-shop/public/contact.html
+tcns  ~/tire-shop/public/contact_es.html
 
 # These do not update automatically, but on the next new instance of a program:
 cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
