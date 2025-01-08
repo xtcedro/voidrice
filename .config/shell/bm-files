@@ -22,6 +22,10 @@ sr ~/DominguezTS/public/services.html
 srs ~/DominguezTS/public/services_es.html
 gal ~/DominguezTS/public/gallery.html
 gals ~/DominguezTS/public/gallery_es.html
+ap ~/DominguezTS/public/appointments.html
+aps ~/DominguezTS/public/appointments_es.html
+vap ~/DominguezTS/public/view-appointments.html
+vaps ~/DominguezTS/public/view-appointments_es.html
 cn  ~/DominguezTS/public/contact.html
 cns  ~/DominguezTS/public/contact_es.html
 
