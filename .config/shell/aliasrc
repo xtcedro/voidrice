@@ -74,7 +74,7 @@ alias \
       aptt="git clone git@github.com:xtcedro/appointment-tracker.git" \
 	  dtsupdate="cd $TMP && tech && rm -rf $ROOT/* && rm -rf DominguezTS/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd && rns" \
 	  okdupdate="cd $TMP && okdev && rm -rf $ROOT/* && rm -rf okdevs/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns" \
-	  voidupdate="rm -rf ~/.config && cd $TMP && void && cp -r voidrice/.config ~/.config && rm -rf voidrice && cd" \
+	  voidupdate="rm -rf ~/.config ~/.local && cd $TMP && void && cp -r voidrice/{.local,config} . && rm -rf voidrice && cd" \
       dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
       okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
       ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
