@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define repository and project directory
-REPO_URL="git@github.com/xtcedro/roofing-company-app.git"
+REPO_URL="git@github.com:xtcedro/roofing-company-app.git"
 PROJECT_NAME="roofing-company-app"
 
 # Clone the repository
