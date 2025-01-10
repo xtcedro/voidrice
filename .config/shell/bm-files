@@ -21,7 +21,7 @@ cfb	~/.local/src/dwmblocks/config.h
 vbf	~/voidrice/.config/shell/bm-files
 
 ## This file is the bm-dirs in voidrice
-vbd	~/voidrice/.config}/shell/bm-dirs
+vbd	~/voidrice/.config/shell/bm-dirs
 
 ## This file is the aliasrc in voidrice
 vba	~/voidrice/.config/shell/aliasrc
@@ -158,7 +158,7 @@ cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
 va voidrice/.config/shell/aliasrc
 
 ## Profile file in voidrice
-pr voidrice/.config/shell/profile
+vp voidrice/.config/shell/profile
 
 ## Zshrc file in voidrice
 zr voidrice/.config/zsh/.zshrc
