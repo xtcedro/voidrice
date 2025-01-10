@@ -1,82 +1,100 @@
-
-
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
+# Use custom mbsync configuration if present.
 [ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
 
-# sudo not required for some system commands
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
-	alias $command="sudo $command"
-done; unset command
+# sudo aliases for system commands
+for cmd in mount umount sv pacman updatedb su shutdown poweroff reboot; do
+    alias $cmd="sudo $cmd"
+done; unset cmd
 
+# Verbose and safe commands
+alias \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -vI" \
+    mkd="mkdir -pv" \
+    bc="bc -ql" \
+    rsync="rsync -vrPlu" \
+    ffmpeg="ffmpeg -hide_banner"
+
+# Colorized commands
+alias \
+    ls="ls -hN --color=auto --group-directories-first" \
+    grep="grep --color=auto" \
+    diff="diff --color=auto"
+
+# Simplified common commands
+alias \
+    g="git" \
+    ka="killall" \
+    e="$EDITOR" \
+    v="$EDITOR" \
+    p="pip install" \
+    z="zathura"
+
+# Git workflow
+alias \
+    ga="git add ." \
+    gc="git commit -m" \
+    gp="git push origin" \
+    gm="git merge"
+
+# SSH with hardcoded IPs
+alias \
+    dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
+    ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
+    app="ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
+    okd="ssh -i keys/Milagros.pem admin@52.91.94.161"
+
+# Dynamic SSH function
+ssh_server() {
+    ssh -i keys/Milagros.pem admin@"$1"
+}
+
+# Dynamic Git cloning function
+clone_repo() {
+    git clone git@github.com:xtcedro/"$1".git
+}
+
+# Hardcoded aliases using clone_repo function
+alias \
+    void="clone_repo voidrice" \
+    tech="clone_repo DominguezTS" \
+    gran="clone_repo granite-company" \
+    okdev="clone_repo okdevs" \
+    tire="clone_repo tire-shop" \
+    roof="clone_repo roofing-company"
+
+# Update commands
+dtsupdate() {
+    cd $TMP && clone_repo DominguezTS && \
+    rm -rf $ROOT/* && rm -rf DominguezTS/README.md && \
+    cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd && rns
+}
+
+okdupdate() {
+    cd $TMP && clone_repo okdevs && \
+    rm -rf $ROOT/* && rm -rf okdevs/README.md && \
+    cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns
+}
+
+voidupdate() {
+    rm -rf ~/.config ~/.local && cd $TMP && \
+    clone_repo voidrice && \
+    cp -r voidrice/.local ~/. && cp -r voidrice/.config ~/. && \
+    rm -rf voidrice && cd
+}
+
+# Search and edit scripts
 se() {
-	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
-	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
-	}
+    choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
+    [ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
+}
 
-# Verbosity and settings that you pretty much just always are going to want.
-alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	rm="rm -vI" \
-	bc="bc -ql" \
-	rsync="rsync -vrPlu" \
-	mkd="mkdir -pv" \
-	yt="yt-dlp --embed-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
-	ytt="yt --skip-download --write-thumbnail" \
-	ffmpeg="ffmpeg -hide_banner"
-
-# Colorize commands when possible.
-alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
-	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi" \
-	ip="ip -color=auto"
-
-# These common commands are just too long! Abbreviate them.
-alias \
-	ka="killall" \
-	g="git" \
-	trem="transmission-remote" \
-	YT="youtube-viewer" \
-	sdn="shutdown -h now" \
-	e="$EDITOR" \
-	v="$EDITOR" \
-	p="pip install" \
-	xi="sudo xbps-install" \
-	xr="sudo xbps-remove -R" \
-	xq="xbps-query" \
-	z="zathura" \
-	ga="git add . " \
-	gc="git commit -m" \
-	gp="git push origin" \
-	gm="git merge" \
-
-alias \
-	lf="lfub" \
-	magit="nvim -c MagitOnly" \
-	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
-
-alias \
-      l="ls -cFlah" \
-      rns="sudo systemctl reload nginx" \
-      void="git clone git@github.com:xtcedro/voidrice.git" \
-      tech="git clone git@github.com:xtcedro/DominguezTS.git" \
-      gran="git clone git@github.com:xtcedro/granite-company.git" \
-      okdev="git clone git@github.com:xtcedro/okdevs.git" \
-      tire="git clone git@github.com:xtcedro/tire-shop.git" \
-      roof="git clone git@github.com:xtcedro/roofing-company.git" \
-      aptt="git clone git@github.com:xtcedro/appointment-tracker.git" \
-	  dtsupdate="cd $TMP && tech && rm -rf $ROOT/* && rm -rf DominguezTS/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd && rns" \
-	  okdupdate="cd $TMP && okdev && rm -rf $ROOT/* && rm -rf okdevs/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns" \
-	  voidupdate="rm -rf ~/.config ~/.local && cd $TMP && void && cp -r voidrice/.local ~/. && cp -r voidrice/.config ~/. && rm -rf voidrice && cd" \
-      dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
-      ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
-      app="ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
-      okd="ssh -i keys/Milagros.pem admin@52.91.94.161" \
+# Help command to list custom aliases
+alias help="alias | grep -E 'git|ssh|update|yt|killall'"
