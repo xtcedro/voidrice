@@ -60,23 +60,23 @@ cn  ~/DominguezTS/public/contact.html
 cns  ~/DominguezTS/public/contact_es.html
 
 ## Files for Granite Company
-sc  ~/DominguezTS/public/assets/css/style.css
-in  ~/DominguezTS/public/index.html
-ins  ~/DominguezTS/public/index_es.html
-ab  ~/DominguezTS/public/about.html
-abs  ~/DominguezTS/public/about_es.html
-abb  ~/DominguezTS/public/about2.html
-abbs  ~/DominguezTS/public/about2_es.html
-sr ~/DominguezTS/public/services.html
-srs ~/DominguezTS/public/services_es.html
-gal ~/DominguezTS/public/gallery.html
-gals ~/DominguezTS/public/gallery_es.html
-ap ~/DominguezTS/public/appointments.html
-aps ~/DominguezTS/public/appointments_es.html
-vap ~/DominguezTS/public/view-appointments.html
-vaps ~/DominguezTS/public/view-appointments_es.html
-cn  ~/DominguezTS/public/contact.html
-cns  ~/DominguezTS/public/contact_es.html
+sc  ~/granite-company/public/assets/css/style.css
+in  ~/granite-company/public/index.html
+ins  ~/granite-company/public/index_es.html
+ab  ~/granite-company/public/about.html
+abs  ~/granite-company/public/about_es.html
+abb  ~/granite-company/public/about2.html
+abbs  ~/granite-company/public/about2_es.html
+sr ~/granite-company/public/services.html
+srs ~/granite-company/public/services_es.html
+gal ~/granite-company/public/gallery.html
+gals ~/granite-company/public/gallery_es.html
+ap ~/granite-company/public/appointments.html
+aps ~/granite-company/public/appointments_es.html
+vap ~/granite-company/public/view-appointments.html
+vaps ~/granite-company/public/view-appointments_es.html
+cn  ~/granite-company/public/contact.html
+cns  ~/granite-company/public/contact_es.html
 
 ## Files for Heavenly Roofing Company
 rsc  ~/roofing-company/public/assets/css/style.css
