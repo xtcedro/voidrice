@@ -1,22 +1,46 @@
 # These files automatically update when edited/saved in vim:
 
-# keys	filename			                        	description
-bf	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files	# This file, a list of bookmarked files
-bd	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs		# A list of bookmarked directories similar to this file
-cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources	# Colors, themes and variables for X11
-cfb	~/.local/src/dwmblocks/config.h			         	# dwmblocks: the status bar for dwm
+
+## description
+# keys	filename
+
+## This file, a list of bookmarked files
+bf	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files
+
+## A list of bookmarked directories similar to this file
+bd	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs
+
+## Colors, themes and variables for X11
+cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
+
+## dwmblocks: the status bar for dwm
+cfb	~/.local/src/dwmblocks/config.h
 
 
-vbf	voidrice/.config/shell/bm-files	            # This file is the bm-files in voidrice
-vbd	voidrice/.config}/shell/bm-dirs	            # This file is the bm-dirs in voidrice
-vba	voidrice/.config/shell/aliasrc              # This file is the aliasrc in voidrice
-vbz	voidrice/.config/zsh/.zshrc			     	# This file is the zshrc in voidrice
+## This file is the bm-files in voidrice
+vbf	~/voidrice/.config/shell/bm-files
 
-sql	/var/www/backend/database/schema.sql					# This file is the schema.sql
-sjs	/var/www/html/server.js                 	# This file is the schema.sql
-scs	/var/www/html/public/assets/js/script.js  	# This file is the schema.sql
+## This file is the bm-dirs in voidrice
+vbd	~/voidrice/.config}/shell/bm-dirs
 
-# Files for Dominguez Tech Solutionso
+## This file is the aliasrc in voidrice
+vba	~/voidrice/.config/shell/aliasrc
+
+## This file is the zshrc in voidrice
+vbz	~/voidrice/.config/zsh/.zshrc
+
+
+## This file is the schema.sql
+sql	/var/www/backend/database/schema.sql
+
+## This file is the server.js
+sjs	/var/www/html/server.js
+
+## This file is the script.js
+scs	/var/www/html/public/assets/js/script.js
+
+
+## Files for Dominguez Tech Solutions
 sc  ~/DominguezTS/public/assets/css/style.css
 in  ~/DominguezTS/public/index.html
 ins  ~/DominguezTS/public/index_es.html
@@ -35,7 +59,26 @@ vaps ~/DominguezTS/public/view-appointments_es.html
 cn  ~/DominguezTS/public/contact.html
 cns  ~/DominguezTS/public/contact_es.html
 
-# Files for Heavenly Roofing Company
+## Files for Granite Company
+sc  ~/DominguezTS/public/assets/css/style.css
+in  ~/DominguezTS/public/index.html
+ins  ~/DominguezTS/public/index_es.html
+ab  ~/DominguezTS/public/about.html
+abs  ~/DominguezTS/public/about_es.html
+abb  ~/DominguezTS/public/about2.html
+abbs  ~/DominguezTS/public/about2_es.html
+sr ~/DominguezTS/public/services.html
+srs ~/DominguezTS/public/services_es.html
+gal ~/DominguezTS/public/gallery.html
+gals ~/DominguezTS/public/gallery_es.html
+ap ~/DominguezTS/public/appointments.html
+aps ~/DominguezTS/public/appointments_es.html
+vap ~/DominguezTS/public/view-appointments.html
+vaps ~/DominguezTS/public/view-appointments_es.html
+cn  ~/DominguezTS/public/contact.html
+cns  ~/DominguezTS/public/contact_es.html
+
+## Files for Heavenly Roofing Company
 rsc  ~/roofing-company/public/assets/css/style.css
 rin  ~/roofing-company/public/index.html
 rins  ~/roofing-company/public/index_es.html
@@ -48,7 +91,7 @@ rgas ~/roofing-company/public/gallery_es.html
 rcn  ~/roofing-company/public/contact.html
 rcns  ~/roofing-company/public/contact_es.html
 
-# Files for OK DEVS
+## Files for OK DEVS
 osc ~/okdevs/public/assets/css/style.css
 oin ~/okdevs/public/index.html
 oins ~/okdevs/public/index_es.html
@@ -57,7 +100,7 @@ oabs ~/okdevs/public/about_es.html
 ole ~/okdevs/public/letter.html
 oles ~/okdevs/public/letter_es.html
 
-# Files for Tito's Tire Shop
+## Files for Tito's Tire Shop
 tsc  ~/tire-shop/public/assets/css/style.css
 tin  ~/tire-shop/public/index.html
 tins  ~/tire-shop/public/index_es.html
@@ -72,25 +115,50 @@ ttrs ~/tire-shop/public/tire-recommendation_es.html
 tcn  ~/tire-shop/public/contact.html
 tcns  ~/tire-shop/public/contact_es.html
 
-# These do not update automatically, but on the next new instance of a program:
-cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim		# vim/neovim config
-cfz	$HOME/.config/zsh/.zshrc				# zsh (shell) config
-cfa	${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc		# aliases used by zsh (and potentially other shells)
-cfp	${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile		# profile file for login settings for zsh
-cfm	${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc		# mutt (email client) config
-cfn	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config	# newsboat (RSS reader)
-cfu	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls		# RSS urls for newsboat
-cfmb ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings	# ncmpcpp (music player) keybinds file
-cfmc ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config	# ncmpcpp (music player) config
-cfl	${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc		# lf (file browser) config
-cfL	${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope		# lf's scope/preview file
-cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler	# nsxiv (image viewer) key/script handler
+## These do not update automatically, but
+## on the next new instance of a program:
 
-# Alias file in voidrice
+## vim/neovim config
+cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
+
+## zsh (shell) config
+cfz	$HOME/.config/zsh/.zshrc
+
+## aliases used by zsh (and potentially other shells)
+cfa	${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc
+
+## profile file for login settings for zsh
+cfp	${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
+
+## mutt (email client) config
+cfm	${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc
+
+## newsboat (RSS reader)
+cfn	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config
+
+## RSS urls for newsboat
+cfu	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls
+
+## ncmpcpp (music player) keybinds file
+cfmb ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings
+
+## ncmpcpp (music player) config
+cfmc ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config
+
+## lf (file browser) config
+cfl	${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc
+
+## lf's scope/preview file
+cfL	${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope
+
+## nsxiv (image viewer) key/script handler
+cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
+
+## Alias file in voidrice
 va voidrice/.config/shell/aliasrc
 
-# Profile file in voidrice
+## Profile file in voidrice
 pr voidrice/.config/shell/profile
 
-# Zshrc file in voidrice
+## Zshrc file in voidrice
 zr voidrice/.config/zsh/.zshrc
