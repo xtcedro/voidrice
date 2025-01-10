@@ -78,6 +78,6 @@ alias \
 	  okdupdate="cd $TMP && okdev && rm -rf $ROOT/* && rm -rf okdevs/README.md && cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns" \
 	  voidupdate="rm -rf ~/.config ~/.local && cd $TMP && void && cp -r voidrice/.local ~/. && cp -r voidrice/.config ~/. && rm -rf voidrice && cd" \
       dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
-      okd="ssh -i keys/truecrashcourse.pem admin@okdevs.xyz" \
       ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
       app="ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
+      okd="ssh -i keys/Milagros.pem admin@ec2-54-91-94-161.compute-1.amazonaws.com" \
