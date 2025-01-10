@@ -36,7 +36,8 @@ alias \
     e="$EDITOR" \
     v="$EDITOR" \
     p="pip install" \
-    z="zathura"
+    z="zathura" \
+	rns="sudo systemctl reload nginx" \
 
 # Git workflow
 alias \
@@ -99,4 +100,3 @@ se() {
 
 # Help command to list custom aliases
 alias help="alias | grep -E 'git|ssh|update|yt|killall'"
-
