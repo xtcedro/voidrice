@@ -38,6 +38,8 @@ cp -r ~/voidrice/.config .
 cp -r ~/voidrice/.local .
 ln -s ~/.config/shell/profile .zprofile
 ln -s ~/zsh/.zshrc .
+mkdir ~/.cache/zsh/
+touch ~/.cache/zsh/history
 sudo passwd admin
 chsh
 git config --global user.name "xtcedro"
