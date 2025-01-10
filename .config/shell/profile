@@ -11,7 +11,7 @@ unsetopt PROMPT_SP 2>/dev/null
 # Backend Directory
 export BACK="/var/www/backend"
 
-exprot TMP="/tmp"
+export TMP="/tmp"
 
 # Git Directory
 export GIT="/tmp/Etc"
