@@ -26,7 +26,8 @@ alias \
 alias \
     ls="ls -hN --color=auto --group-directories-first" \
     grep="grep --color=auto" \
-    diff="diff --color=auto"
+    diff="diff --color=auto" \
+    l="ls -cFlah" \
 
 # Simplified common commands
 alias \
@@ -98,3 +99,4 @@ se() {
 
 # Help command to list custom aliases
 alias help="alias | grep -E 'git|ssh|update|yt|killall'"
+
