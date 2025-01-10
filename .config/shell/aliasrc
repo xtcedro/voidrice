@@ -76,13 +76,13 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/* && rm -rf DominguezTS/README.md && \
-    cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd && rns
+    cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd
 }
 
 okdupdate() {
     cd $TMP && clone_repo okdevs && \
     rm -rf $ROOT/* && rm -rf okdevs/README.md && \
-    cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd && rns
+    cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd
 }
 
 voidupdate() {
