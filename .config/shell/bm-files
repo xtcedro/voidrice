@@ -60,19 +60,17 @@ cn  ~/DominguezTS/public/contact.html
 cns  ~/DominguezTS/public/contact_es.html
 
 ## Files for Granite Company
-sc  ~/granite-company/public/assets/css/style.css
-in  ~/granite-company/public/index.html
-ins  ~/granite-company/public/index_es.html
-ab  ~/granite-company/public/about.html
-abs  ~/granite-company/public/about_es.html
-abb  ~/granite-company/public/about2.html
-abbs  ~/granite-company/public/about2_es.html
-sr ~/granite-company/public/services.html
-srs ~/granite-company/public/services_es.html
-gal ~/granite-company/public/gallery.html
-gals ~/granite-company/public/gallery_es.html
-ap ~/granite-company/public/appointments.html
-aps ~/granite-company/public/appointments_es.html
+gsc  ~/granite-company/public/assets/css/style.css
+gin  ~/granite-company/public/index.html
+gins  ~/granite-company/public/index_es.html
+gab  ~/granite-company/public/about.html
+gabs  ~/granite-company/public/about_es.html
+gsr ~/granite-company/public/services.html
+gsrs ~/granite-company/public/services_es.html
+gral ~/granite-company/public/gallery.html
+grals ~/granite-company/public/gallery_es.html
+gap ~/granite-company/public/appointments.html
+gaps ~/granite-company/public/appointments_es.html
 vap ~/granite-company/public/view-appointments.html
 vaps ~/granite-company/public/view-appointments_es.html
 cn  ~/granite-company/public/contact.html
