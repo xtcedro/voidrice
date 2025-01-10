@@ -68,7 +68,6 @@ alias \
       rns="sudo systemctl reload nginx" \
       void="git clone git@github.com:xtcedro/voidrice.git" \
       tech="git clone git@github.com:xtcedro/DominguezTS.git" \
-      rapp="git clone git@github.com:xtcedro/roofing-company-app.git" \
       gran="git clone git@github.com:xtcedro/granite-company.git" \
       okdev="git clone git@github.com:xtcedro/okdevs.git" \
       tire="git clone git@github.com:xtcedro/tire-shop.git" \
