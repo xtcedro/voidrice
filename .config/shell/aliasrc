@@ -63,7 +63,24 @@ clone_repo() {
     git clone git@github.com:xtcedro/"$1".git
 }
 
-# Hardcoded aliases using clone_repo function
+# Function to clone all repositories at once
+clone_all_repos() {
+    repositories=(
+        "voidrice"
+        "DominguezTS"
+        "granite-company"
+        "okdevs"
+        "tire-shop"
+        "roofing-company"
+    )
+
+    for repo in "${repositories[@]}"; do
+        echo "Cloning repository: $repo"
+        clone_repo "$repo"
+    done
+}
+
+# Hardcoded aliases for individual repositories using clone_repo function
 alias \
     void="clone_repo voidrice" \
     tech="clone_repo DominguezTS" \
@@ -71,6 +88,9 @@ alias \
     okdev="clone_repo okdevs" \
     tire="clone_repo tire-shop" \
     roof="clone_repo roofing-company"
+
+# Alias for cloning all repositories at once
+alias clone_all="clone_all_repos"
 
 # Update commands
 dtsupdate() {
