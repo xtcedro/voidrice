@@ -14,5 +14,6 @@ vbi voidrice/.local/bin
 src $HOME/.local/src
 vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
 ro  $ROOT
+ba  /var/www/backend/
 phd ~/Etc/assets/php/
 ngi ~/Etc/nginx/site-available/
