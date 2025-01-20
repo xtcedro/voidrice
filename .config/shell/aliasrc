@@ -1,6 +1,8 @@
 # Use neovim for vim if present.
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
+alias rns="sudo systemctl reload nginx"
+
 # Use $XINITRC variable if file exists.
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
@@ -51,7 +53,8 @@ alias \
     dts="ssh -i keys/Milagros.pem admin@ec2-54-197-6-166.compute-1.amazonaws.com" \
     ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
     app="ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
-    okd="ssh -i keys/Milagros.pem admin@52.91.94.161"
+    okd="ssh -i keys/Milagros.pem admin@52.91.94.161" \
+    heav="ssh -i keys/Milagros.pem admin@54.226.117.192"
 
 # Dynamic SSH function
 ssh_server() {
@@ -63,24 +66,7 @@ clone_repo() {
     git clone git@github.com:xtcedro/"$1".git
 }
 
-# Function to clone all repositories at once
-clone_all_repos() {
-    repositories=(
-        "voidrice"
-        "DominguezTS"
-        "granite-company"
-        "okdevs"
-        "tire-shop"
-        "roofing-company"
-    )
-
-    for repo in "${repositories[@]}"; do
-        echo "Cloning repository: $repo"
-        clone_repo "$repo"
-    done
-}
-
-# Hardcoded aliases for individual repositories using clone_repo function
+# Hardcoded aliases using clone_repo function
 alias \
     void="clone_repo voidrice" \
     tech="clone_repo DominguezTS" \
@@ -88,9 +74,6 @@ alias \
     okdev="clone_repo okdevs" \
     tire="clone_repo tire-shop" \
     roof="clone_repo roofing-company"
-
-# Alias for cloning all repositories at once
-alias clone_all="clone_all_repos"
 
 # Update commands
 dtsupdate() {
