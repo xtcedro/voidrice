@@ -77,14 +77,20 @@ alias \
 # Update commands
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
-    rm -rf $ROOT/* && rm -rf DominguezTS/README.md && \
-    cp -r DominguezTS/* $ROOT/ && rm -rf DominguezTS && cd
+    rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
+	rm -rf DominguezTS && cd
+}
+
+hrcupdate() {
+    cd $TMP && clone_repo roofing-company && \
+    rm -rf $ROOT/public/* && cp -r roofing-company/public/* $ROOT/public/ && \
+	rm -rf roofing-company && cd
 }
 
 okdupdate() {
     cd $TMP && clone_repo okdevs && \
-    rm -rf $ROOT/* && rm -rf okdevs/README.md && \
-    cp -r DominguezTS/* $ROOT/ && rm -rf okdevs && cd
+    rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
+	rm -rf okdevs && cd
 }
 
 voidupdate() {
