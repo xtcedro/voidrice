@@ -16,8 +16,8 @@ sudo apt full-upgrade -yy & wait
 echo "Installing required packages..."
 sudo apt install \
     ufw fail2ban neofetch zsh mariadb-server git btop \
-    neovim nginx certbot cron python3-certbot-nginx \
-    nodejs npm unattended-upgrades -yy &
+    neovim nginx-full certbot cron python3-certbot-nginx \
+    nodejs npm unattended-upgrades fzf  -yy &
 wait
 
 echo "Configuring UFW rules..."
@@ -40,7 +40,7 @@ sudo systemctl enable nginx &
 wait
 
 echo "Reconfiguring unattended-upgrades..."
-sudo dpkg-reconfigure --priority=low unattended-upgrades & wait
+sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 echo "Cloning configuration repository..."
 git clone https://github.com/xtcedro/voidrice.git & wait
