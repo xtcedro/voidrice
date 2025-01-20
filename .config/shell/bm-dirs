@@ -17,4 +17,3 @@ ro  $ROOT/
 ngi /etc/nginx/sites-available/
 ba  /var/www/backend/
 phd ~/Etc/assets/php/
-ngi ~/etc/nginx/site-available/
