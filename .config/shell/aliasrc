@@ -90,6 +90,7 @@ hrcupdate() {
 okdupdate() {
     cd $TMP && clone_repo okdevs && \
     rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
+	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
 	rm -rf okdevs && cd
 }
 
