@@ -11,9 +11,12 @@ mn  /mnt
 pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
 bi  $HOME/.local/bin
 vbi voidrice/.local/bin
-src $HOME/.local/src
 vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
 ro  $ROOT/
 ngi /etc/nginx/sites-available/
 ba  /var/www/backend/
 phd ~/Etc/assets/php/
+sc	DominguezTS/public/assets/css/
+rsc tire-shop/public/assets/css/
+tsc roofing-company/public/assets/css/
+gsc granite-company/public/assets/css/

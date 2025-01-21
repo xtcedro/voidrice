@@ -41,7 +41,6 @@ scs	/var/www/html/public/assets/js/script.js
 
 
 ## Files for Dominguez Tech Solutions
-sc  ~/DominguezTS/public/assets/css/style.css
 in  ~/DominguezTS/public/index.html
 ins  ~/DominguezTS/public/index_es.html
 ab  ~/DominguezTS/public/about.html
@@ -60,7 +59,6 @@ cn  ~/DominguezTS/public/contact.html
 cns  ~/DominguezTS/public/contact_es.html
 
 ## Files for Granite Company
-gsc  ~/granite-company/public/assets/css/style.css
 gin  ~/granite-company/public/index.html
 gins  ~/granite-company/public/index_es.html
 gab  ~/granite-company/public/about.html
@@ -77,7 +75,6 @@ cn  ~/granite-company/public/contact.html
 cns  ~/granite-company/public/contact_es.html
 
 ## Files for Heavenly Roofing Company
-rsc  ~/roofing-company/public/assets/css/style.css
 rin  ~/roofing-company/public/index.html
 rins  ~/roofing-company/public/index_es.html
 rab  ~/roofing-company/public/about.html
@@ -94,7 +91,6 @@ rcn  ~/roofing-company/public/contact.html
 rcns  ~/roofing-company/public/contact_es.html
 
 ## Files for OK DEVS
-osc ~/okdevs/public/assets/css/style.css
 oin ~/okdevs/public/index.html
 oins ~/okdevs/public/index_es.html
 oab ~/okdevs/public/about.html
@@ -103,7 +99,6 @@ ole ~/okdevs/public/letter.html
 oles ~/okdevs/public/letter_es.html
 
 ## Files for Tito's Tire Shop
-tsc  ~/tire-shop/public/assets/css/style.css
 tin  ~/tire-shop/public/index.html
 tins  ~/tire-shop/public/index_es.html
 tab  ~/tire-shop/public/about.html
