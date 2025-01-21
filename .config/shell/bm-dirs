@@ -17,6 +17,6 @@ ngi /etc/nginx/sites-available/
 ba  /var/www/backend/
 phd ~/Etc/assets/php/
 sc	DominguezTS/public/assets/css/
-rsc tire-shop/public/assets/css/
-tsc roofing-company/public/assets/css/
+tsc tire-shop/public/assets/css/
+rsc roofing-company/public/assets/css/
 gsc granite-company/public/assets/css/
