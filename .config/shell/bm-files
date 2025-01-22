@@ -69,10 +69,10 @@ gral ~/granite-company/public/gallery.html
 grals ~/granite-company/public/gallery_es.html
 gap ~/granite-company/public/appointments.html
 gaps ~/granite-company/public/appointments_es.html
-vap ~/granite-company/public/view-appointments.html
-vaps ~/granite-company/public/view-appointments_es.html
-cn  ~/granite-company/public/contact.html
-cns  ~/granite-company/public/contact_es.html
+gvap ~/granite-company/public/view-appointments.html
+gvaps ~/granite-company/public/view-appointments_es.html
+gcn  ~/granite-company/public/contact.html
+gcns  ~/granite-company/public/contact_es.html
 
 ## Files for Heavenly Roofing Company
 rin  ~/roofing-company/public/index.html
