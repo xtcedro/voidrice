@@ -43,20 +43,20 @@ scs	/var/www/html/public/assets/js/script.js
 ## Files for Dominguez Tech Solutions
 in  ~/DominguezTS/public/index.html
 ins  ~/DominguezTS/public/index_es.html
-ab  ~/DominguezTS/public/about.html
-abs  ~/DominguezTS/public/about_es.html
-abb  ~/DominguezTS/public/about2.html
-abbs  ~/DominguezTS/public/about2_es.html
-sr ~/DominguezTS/public/services.html
-srs ~/DominguezTS/public/services_es.html
-gal ~/DominguezTS/public/gallery.html
-gals ~/DominguezTS/public/gallery_es.html
-ap ~/DominguezTS/public/appointments.html
-aps ~/DominguezTS/public/appointments_es.html
-vap ~/DominguezTS/public/view-appointments.html
-vaps ~/DominguezTS/public/view-appointments_es.html
-cn  ~/DominguezTS/public/contact.html
-cns  ~/DominguezTS/public/contact_es.html
+ab  ~/DominguezTS/public/pages/about.html
+abs  ~/DominguezTS/public/pages/about_es.html
+abb  ~/DominguezTS/public/pages/about2.html
+abbs  ~/DominguezTS/public/pages/about2_es.html
+sr ~/DominguezTS/public/pages/services.html
+srs ~/DominguezTS/public/pages/services_es.html
+gal ~/DominguezTS/public/pages/gallery.html
+gals ~/DominguezTS/public/pages/gallery_es.html
+ap ~/DominguezTS/public/pages/appointments.html
+aps ~/DominguezTS/public/pages/appointments_es.html
+vap ~/DominguezTS/public/pages/view-appointments.html
+vaps ~/DominguezTS/public/pages/view-appointments_es.html
+cn  ~/DominguezTS/public/pages/contact.html
+cns  ~/DominguezTS/public/pages/contact_es.html
 
 ## Files for Granite Company
 gin  ~/granite-company/public/index.html
