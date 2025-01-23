@@ -8,6 +8,7 @@ export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
 unsetopt PROMPT_SP 2>/dev/null
 
+export DISPLAY=:0
 # Backend Directory
 export BACK="/var/www/backend"
 
