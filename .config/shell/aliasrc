@@ -78,12 +78,14 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
+	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
 	rm -rf DominguezTS && cd
 }
 
 hrcupdate() {
     cd $TMP && clone_repo roofing-company && \
     rm -rf $ROOT/public/* && cp -r roofing-company/public/* $ROOT/public/ && \
+	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
 	rm -rf roofing-company && cd
 }
 
@@ -91,6 +93,7 @@ okdupdate() {
     cd $TMP && clone_repo okdevs && \
     rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
 	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
+	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
 	rm -rf okdevs && cd
 }
 
