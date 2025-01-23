@@ -20,8 +20,8 @@ sql       /var/www/backend/database/schema.sql
 sjs       /var/www/backend/server.js
 
 ## Dominguez Tech Solutions
-in        $HOME/DominguezTS/public/index.html
-ins       $HOME/DominguezTS/public/index_es.html
+in        $HOME/DominguezTS/public/pages/index.html
+ins       $HOME/DominguezTS/public/pages/index_es.html
 ab        $HOME/DominguezTS/public/pages/about.html
 abs       $HOME/DominguezTS/public/pages/about_es.html
 abb       $HOME/DominguezTS/public/pages/about2.html
