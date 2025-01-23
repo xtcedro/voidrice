@@ -78,7 +78,8 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
+	mv $ROOT/public/pages/* $ROOT/public/  && \
+	mv $ROOT/public/legal/* $ROOT/public/  && \
 	rm -rf DominguezTS && cd
 }
 
