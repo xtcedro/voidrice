@@ -8,10 +8,13 @@
 bf        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files
 bd        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs
 cfx       ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
+cfp       ${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
+cfz       ${XDG_CONFIG_HOME:-$HOME/.config}/zsh/.zshrc
 cfb       $HOME/.local/src/dwmblocks/config.h
 vbf       $HOME/voidrice/.config/shell/bm-files
 vbd       $HOME/voidrice/.config/shell/bm-dirs
 vba       $HOME/voidrice/.config/shell/aliasrc
+vbp       $HOME/voidrice/.config/shell/profile
 vbz       $HOME/voidrice/.config/zsh/.zshrc
 sql       /var/www/backend/database/schema.sql
 sjs       /var/www/backend/server.js
