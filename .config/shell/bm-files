@@ -39,6 +39,7 @@ cns       $HOME/DominguezTS/public/pages/contact_es.html
 fp        $HOME/DominguezTS/public/pages/forget-password.html
 lg        $HOME/DominguezTS/public/pages/login.html
 rg        $HOME/DominguezTS/public/pages/register.html
+da        $HOME/DominguezTS/public/pages/dashboard.html
 
 ## Granite Company
 gin       $HOME/granite-company/public/index.html
