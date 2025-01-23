@@ -28,6 +28,6 @@ client regardless of your email provider. It is integrated into these dotfiles
 as well.
 
 
-## Default Desktop Artwork
-
-Thomas Thiemeyer's *The Road to Samarkand* ([fb](https://www.facebook.com/t.thiemeyer/), [insta](https://www.instagram.com/tthiemeyer/), [shop](https://www.redbubble.com/de/people/TThiemeyer/shop))
+## Default Desktop Artwork  
+Created by OpenAI's DALL-E 2 (January 2025)  
+Generated with input and guidance by Pedro Dominguez.
