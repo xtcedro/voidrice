@@ -1,157 +1,122 @@
-# These files automatically update when edited/saved in vim:
+# Bookmark Files
+# These files are automatically updated when edited/saved in vim.
 
 ## description
 # keys        filename
 
-## This file, a list of bookmarked files
+## General Bookmarks
 bf        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files
-
-## A list of bookmarked directories similar to this file
 bd        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs
+cfx       ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
+cfb       $HOME/.local/src/dwmblocks/config.h
+vbf       $HOME/voidrice/.config/shell/bm-files
+vbd       $HOME/voidrice/.config/shell/bm-dirs
+vba       $HOME/voidrice/.config/shell/aliasrc
+vbz       $HOME/voidrice/.config/zsh/.zshrc
+sql       /var/www/backend/database/schema.sql
+sjs       /var/www/html/server.js
+scs       /var/www/html/public/assets/js/script.js
 
-## Colors, themes and variables for X11
-cfx        ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
+## Dominguez Tech Solutions
+in        $HOME/DominguezTS/public/index.html
+ins       $HOME/DominguezTS/public/index_es.html
+ab        $HOME/DominguezTS/public/pages/about.html
+abs       $HOME/DominguezTS/public/pages/about_es.html
+abb       $HOME/DominguezTS/public/pages/about2.html
+abbs      $HOME/DominguezTS/public/pages/about2_es.html
+sr        $HOME/DominguezTS/public/pages/services.html
+srs       $HOME/DominguezTS/public/pages/services_es.html
+gal       $HOME/DominguezTS/public/pages/gallery.html
+gals      $HOME/DominguezTS/public/pages/gallery_es.html
+ap        $HOME/DominguezTS/public/pages/appointments.html
+aps       $HOME/DominguezTS/public/pages/appointments_es.html
+vap       $HOME/DominguezTS/public/pages/view-appointments.html
+vaps      $HOME/DominguezTS/public/pages/view-appointments_es.html
+cn        $HOME/DominguezTS/public/pages/contact.html
+cns       $HOME/DominguezTS/public/pages/contact_es.html
+fp        $HOME/DominguezTS/public/pages/forget-password.html
+lg        $HOME/DominguezTS/public/pages/login.html
+rg        $HOME/DominguezTS/public/pages/register.html
 
-## dwmblocks: the status bar for dwm
-cfb        $HOME/.local/src/dwmblocks/config.h
+## Granite Company
+gin       $HOME/granite-company/public/index.html
+gins      $HOME/granite-company/public/index_es.html
+gab       $HOME/granite-company/public/about.html
+gabs      $HOME/granite-company/public/about_es.html
+gsr       $HOME/granite-company/public/services.html
+gsrs      $HOME/granite-company/public/services_es.html
+gral      $HOME/granite-company/public/gallery.html
+grals     $HOME/granite-company/public/gallery_es.html
+gap       $HOME/granite-company/public/appointments.html
+gaps      $HOME/granite-company/public/appointments_es.html
+gvap      $HOME/granite-company/public/view-appointments.html
+gvaps     $HOME/granite-company/public/view-appointments_es.html
+gcn       $HOME/granite-company/public/contact.html
+gcns      $HOME/granite-company/public/contact_es.html
+gfp       $HOME/granite-company/public/forget-password.html
+glg       $HOME/granite-company/public/login.html
+grg       $HOME/granite-company/public/register.html
 
-## This file is the bm-files in voidrice
-vbf        $HOME/voidrice/.config/shell/bm-files
+## Heavenly Roofing Company
+rin       $HOME/roofing-company/public/index.html
+rins      $HOME/roofing-company/public/index_es.html
+rab       $HOME/roofing-company/public/about.html
+rabs      $HOME/roofing-company/public/about_es.html
+rsr       $HOME/roofing-company/public/services.html
+rsrs      $HOME/roofing-company/public/services_es.html
+rga       $HOME/roofing-company/public/gallery.html
+rgas      $HOME/roofing-company/public/gallery_es.html
+rap       $HOME/roofing-company/public/appointments.html
+raps      $HOME/roofing-company/public/appointments_es.html
+rvap      $HOME/roofing-company/public/view-appointments.html
+rvaps     $HOME/roofing-company/public/view-appointments_es.html
+rcn       $HOME/roofing-company/public/contact.html
+rcns      $HOME/roofing-company/public/contact_es.html
+rfp       $HOME/roofing-company/public/forget-password.html
+rlg       $HOME/roofing-company/public/login.html
+rrg       $HOME/roofing-company/public/register.html
 
-## This file is the bm-dirs in voidrice
-vbd        $HOME/voidrice/.config/shell/bm-dirs
+## OK DEVS
+oin       $HOME/okdevs/public/index.html
+oins      $HOME/okdevs/public/index_es.html
+oab       $HOME/okdevs/public/about.html
+oabs      $HOME/okdevs/public/about_es.html
+ole       $HOME/okdevs/public/letter.html
+oles      $HOME/okdevs/public/letter_es.html
+ofp       $HOME/okdevs/public/forget-password.html
+olg       $HOME/okdevs/public/login.html
+org       $HOME/okdevs/public/register.html
 
-## This file is the aliasrc in voidrice
-vba        $HOME/voidrice/.config/shell/aliasrc
+## Tito's Tire Shop
+tin       $HOME/tire-shop/public/index.html
+tins      $HOME/tire-shop/public/index_es.html
+tab       $HOME/tire-shop/public/about.html
+tabs      $HOME/tire-shop/public/about_es.html
+tsr       $HOME/tire-shop/public/services.html
+tsrs      $HOME/tire-shop/public/services_es.html
+tga       $HOME/tire-shop/public/gallery.html
+tgas      $HOME/tire-shop/public/gallery_es.html
+ttr       $HOME/tire-shop/public/tire-recommendation.html
+ttrs      $HOME/tire-shop/public/tire-recommendation_es.html
+tcn       $HOME/tire-shop/public/contact.html
+tcns      $HOME/tire-shop/public/contact_es.html
+tfp       $HOME/tire-shop/public/forget-password.html
+tlg       $HOME/tire-shop/public/login.html
+trg       $HOME/tire-shop/public/register.html
 
-## This file is the zshrc in voidrice
-vbz        $HOME/voidrice/.config/zsh/.zshrc
-
-## This file is the schema.sql
-sql        /var/www/backend/database/schema.sql
-
-## This file is the server.js
-sjs        /var/www/html/server.js
-
-## This file is the script.js
-scs        /var/www/html/public/assets/js/script.js
-
-## Files for Dominguez Tech Solutions
-in  $HOME/DominguezTS/public/index.html
-ins  $HOME/DominguezTS/public/index_es.html
-ab  $HOME/DominguezTS/public/pages/about.html
-abs  $HOME/DominguezTS/public/pages/about_es.html
-abb  $HOME/DominguezTS/public/pages/about2.html
-abbs  $HOME/DominguezTS/public/pages/about2_es.html
-sr  $HOME/DominguezTS/public/pages/services.html
-srs  $HOME/DominguezTS/public/pages/services_es.html
-gal  $HOME/DominguezTS/public/pages/gallery.html
-gals  $HOME/DominguezTS/public/pages/gallery_es.html
-ap  $HOME/DominguezTS/public/pages/appointments.html
-aps  $HOME/DominguezTS/public/pages/appointments_es.html
-vap  $HOME/DominguezTS/public/pages/view-appointments.html
-vaps  $HOME/DominguezTS/public/pages/view-appointments_es.html
-cn  $HOME/DominguezTS/public/pages/contact.html
-cns  $HOME/DominguezTS/public/pages/contact_es.html
-
-## Files for Granite Company
-gin  $HOME/granite-company/public/index.html
-gins  $HOME/granite-company/public/index_es.html
-gab  $HOME/granite-company/public/about.html
-gabs  $HOME/granite-company/public/about_es.html
-gsr  $HOME/granite-company/public/services.html
-gsrs  $HOME/granite-company/public/services_es.html
-gral  $HOME/granite-company/public/gallery.html
-grals  $HOME/granite-company/public/gallery_es.html
-gap  $HOME/granite-company/public/appointments.html
-gaps  $HOME/granite-company/public/appointments_es.html
-gvap  $HOME/granite-company/public/view-appointments.html
-gvaps  $HOME/granite-company/public/view-appointments_es.html
-gcn  $HOME/granite-company/public/contact.html
-gcns  $HOME/granite-company/public/contact_es.html
-
-## Files for Heavenly Roofing Company
-rin  $HOME/roofing-company/public/index.html
-rins  $HOME/roofing-company/public/index_es.html
-rab  $HOME/roofing-company/public/about.html
-rabs  $HOME/roofing-company/public/about_es.html
-rsr  $HOME/roofing-company/public/services.html
-rsrs  $HOME/roofing-company/public/services_es.html
-rga  $HOME/roofing-company/public/gallery.html
-rgas  $HOME/roofing-company/public/gallery_es.html
-rap  $HOME/roofing-company/public/appointments.html
-raps  $HOME/roofing-company/public/appointments_es.html
-rvap  $HOME/roofing-company/public/view-appointments.html
-rvaps  $HOME/roofing-company/public/view-appointments_es.html
-rcn  $HOME/roofing-company/public/contact.html
-rcns  $HOME/roofing-company/public/contact_es.html
-
-## Files for OK DEVS
-oin  $HOME/okdevs/public/index.html
-oins  $HOME/okdevs/public/index_es.html
-oab  $HOME/okdevs/public/about.html
-oabs  $HOME/okdevs/public/about_es.html
-ole  $HOME/okdevs/public/letter.html
-oles  $HOME/okdevs/public/letter_es.html
-
-## Files for Tito's Tire Shop
-tin  $HOME/tire-shop/public/index.html
-tins  $HOME/tire-shop/public/index_es.html
-tab  $HOME/tire-shop/public/about.html
-tabs  $HOME/tire-shop/public/about_es.html
-tsr  $HOME/tire-shop/public/services.html
-tsrs  $HOME/tire-shop/public/services_es.html
-tga  $HOME/tire-shop/public/gallery.html
-tgas  $HOME/tire-shop/public/gallery_es.html
-ttr  $HOME/tire-shop/public/tire-recommendation.html
-ttrs  $HOME/tire-shop/public/tire-recommendation_es.html
-tcn  $HOME/tire-shop/public/contact.html
-tcns  $HOME/tire-shop/public/contact_es.html
-
-## These do not update automatically, but
-## on the next new instance of a program:
-
-## vim/neovim config
-cfv        ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
-
-## zsh (shell) config
-cfz        $HOME/.config/zsh/.zshrc
-
-## aliases used by zsh (and potentially other shells)
-cfa        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc
-
-## profile file for login settings for zsh
-cfp        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
-
-## mutt (email client) config
-cfm        ${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc
-
-## newsboat (RSS reader)
-cfn        ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config
-
-## RSS urls for newsboat
-cfu        ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls
-
-## ncmpcpp (music player) keybinds file
-cfmb       ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings
-
-## ncmpcpp (music player) config
-cfmc       ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config
-
-## lf (file browser) config
-cfl        ${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc
-
-## lf's scope/preview file
-cfL        ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope
-
-## nsxiv (image viewer) key/script handler
-cfX        ${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
-
-## Alias file in voidrice
-va         $HOME/voidrice/.config/shell/aliasrc
-
-## Profile file in voidrice
-vp         $HOME/voidrice/.config/shell/profile
-
-## Zshrc file in voidrice
-zr         $HOME/voidrice/.config/zsh/.zshrc
+## Additional Configurations
+cfv       ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
+cfz       $HOME/.config/zsh/.zshrc
+cfa       ${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc
+cfp       ${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
+cfm       ${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc
+cfn       ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config
+cfu       ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls
+cfmb      ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings
+cfmc      ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config
+cfl       ${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc
+cfL       ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope
+cfX       ${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
+va        $HOME/voidrice/.config/shell/aliasrc
+vp        $HOME/voidrice/.config/shell/profile
+zr        $HOME/voidrice/.config/zsh/.zshrc
