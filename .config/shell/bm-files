@@ -40,6 +40,20 @@ fp        $HOME/DominguezTS/public/pages/forget-password.html
 lg        $HOME/DominguezTS/public/pages/login.html
 rg        $HOME/DominguezTS/public/pages/register.html
 da        $HOME/DominguezTS/public/pages/dashboard.html
+ac        $HOME/DominguezTS/public/legal/accessibility.html
+acs       $HOME/DominguezTS/public/legal/accessibility_es.html
+ck        $HOME/DominguezTS/public/legal/cookies.html
+cks       $HOME/DominguezTS/public/legal/cookies_es.html
+di        $HOME/DominguezTS/public/legal/disclaimer.html
+dis       $HOME/DominguezTS/public/legal/disclaimer_es.html
+pv        $HOME/DominguezTS/public/legal/privacy.html
+pvs       $HOME/DominguezTS/public/legal/privacy_es.html
+rf        $HOME/DominguezTS/public/legal/refund.html
+rfs       $HOME/DominguezTS/public/legal/refund_es.html
+tm        $HOME/DominguezTS/public/legal/terms.html
+tms       $HOME/DominguezTS/public/legal/terms_es.html
+wt        $HOME/DominguezTS/public/legal/warranty.html
+wts       $HOME/DominguezTS/public/legal/warranty_es.html
 
 ## Granite Company
 gin       $HOME/granite-company/public/index.html
