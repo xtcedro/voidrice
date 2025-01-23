@@ -1,8 +1,8 @@
-# The Voidrice (Luke Smith <https://lukesmith.xyz>'s dotfiles)
+# Pedro M. Dominguez's Dotfiles
 
-These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
-[my YouTube channel](https://youtube.com/c/lukesmithxyz).
+These are my personal dotfiles, inspired by the legendary Luke Smith's [Voidrice](https://lukesmith.xyz). A huge thanks to Luke Smith, wherever he may be, for inspiring me to dive into Linux three years ago. His work and videos planted the seeds that led me to create [Dominguez Tech Solutions](https://www.domingueztechsolutions.com) and [OKDevs](https://www.okdevs.xyz). Without his guidance, I wouldn’t be where I am today.
 
+These dotfiles are tailored for my specific workflow and adhere to my minimalist and functional philosophy.
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
 	- vim/nvim (text editor)
@@ -21,28 +21,12 @@ These are the dotfiles deployed by [LARBS](https://larbs.xyz) and as seen on
 
 ## Usage
 
-These dotfiles are intended to go with numerous suckless programs I use:
-
-- [dwm](https://github.com/lukesmithxyz/dwm) (window manager)
-- [dwmblocks](https://github.com/lukesmithxyz/dwmblocks) (statusbar)
-- [st](https://github.com/lukesmithxyz/st) (terminal emulator)
-
 I also recommend trying out
 [mutt-wizard](https://github.com/lukesmithxyz/mutt-wizard), which additionally
 works with this setup. It gives you an easy-to-install terminal-based email
 client regardless of your email provider. It is integrated into these dotfiles
 as well.
 
-## Install these dotfiles and all dependencies
-
-Use [LARBS](https://larbs.xyz) to autoinstall everything:
-
-```
-curl -LO larbs.xyz/larbs.sh
-```
-
-or clone the repo files directly to your home directory and install the
-[dependencies](https://github.com/LukeSmithxyz/LARBS/blob/master/static/progs.csv).
 
 ## Default Desktop Artwork
 
