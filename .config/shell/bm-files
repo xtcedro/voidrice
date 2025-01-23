@@ -14,8 +14,7 @@ vbd       $HOME/voidrice/.config/shell/bm-dirs
 vba       $HOME/voidrice/.config/shell/aliasrc
 vbz       $HOME/voidrice/.config/zsh/.zshrc
 sql       /var/www/backend/database/schema.sql
-sjs       /var/www/html/server.js
-scs       /var/www/html/public/assets/js/script.js
+sjs       /var/www/backend/server.js
 
 ## Dominguez Tech Solutions
 in        $HOME/DominguezTS/public/index.html
