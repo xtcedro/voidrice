@@ -40,6 +40,10 @@ fp        $HOME/DominguezTS/public/pages/forget-password.html
 lg        $HOME/DominguezTS/public/pages/login.html
 rg        $HOME/DominguezTS/public/pages/register.html
 da        $HOME/DominguezTS/public/pages/dashboard.html
+fps       $HOME/DominguezTS/public/pages/forget-password_es.html
+lgs       $HOME/DominguezTS/public/pages/login_es.html
+rgs       $HOME/DominguezTS/public/pages/register_es.html
+das       $HOME/DominguezTS/public/pages/dashboard_es.html
 ac        $HOME/DominguezTS/public/legal/accessibility.html
 acs       $HOME/DominguezTS/public/legal/accessibility_es.html
 ck        $HOME/DominguezTS/public/legal/cookies.html
