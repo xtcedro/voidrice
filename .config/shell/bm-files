@@ -1,161 +1,157 @@
 # These files automatically update when edited/saved in vim:
 
-
 ## description
-# keys	filename
+# keys        filename
 
 ## This file, a list of bookmarked files
-bf	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files
+bf        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files
 
 ## A list of bookmarked directories similar to this file
-bd	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs
+bd        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs
 
 ## Colors, themes and variables for X11
-cfx	${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
+cfx        ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
 
 ## dwmblocks: the status bar for dwm
-cfb	~/.local/src/dwmblocks/config.h
-
+cfb        $HOME/.local/src/dwmblocks/config.h
 
 ## This file is the bm-files in voidrice
-vbf	~/voidrice/.config/shell/bm-files
+vbf        $HOME/voidrice/.config/shell/bm-files
 
 ## This file is the bm-dirs in voidrice
-vbd	~/voidrice/.config/shell/bm-dirs
+vbd        $HOME/voidrice/.config/shell/bm-dirs
 
 ## This file is the aliasrc in voidrice
-vba	~/voidrice/.config/shell/aliasrc
+vba        $HOME/voidrice/.config/shell/aliasrc
 
 ## This file is the zshrc in voidrice
-vbz	~/voidrice/.config/zsh/.zshrc
-
+vbz        $HOME/voidrice/.config/zsh/.zshrc
 
 ## This file is the schema.sql
-sql	/var/www/backend/database/schema.sql
+sql        /var/www/backend/database/schema.sql
 
 ## This file is the server.js
-sjs	/var/www/html/server.js
+sjs        /var/www/html/server.js
 
 ## This file is the script.js
-scs	/var/www/html/public/assets/js/script.js
-
+scs        /var/www/html/public/assets/js/script.js
 
 ## Files for Dominguez Tech Solutions
-in  ~/DominguezTS/public/index.html
-ins  ~/DominguezTS/public/index_es.html
-ab  ~/DominguezTS/public/pages/about.html
-abs  ~/DominguezTS/public/pages/about_es.html
-abb  ~/DominguezTS/public/pages/about2.html
-abbs  ~/DominguezTS/public/pages/about2_es.html
-sr ~/DominguezTS/public/pages/services.html
-srs ~/DominguezTS/public/pages/services_es.html
-gal ~/DominguezTS/public/pages/gallery.html
-gals ~/DominguezTS/public/pages/gallery_es.html
-ap ~/DominguezTS/public/pages/appointments.html
-aps ~/DominguezTS/public/pages/appointments_es.html
-vap ~/DominguezTS/public/pages/view-appointments.html
-vaps ~/DominguezTS/public/pages/view-appointments_es.html
-cn  ~/DominguezTS/public/pages/contact.html
-cns  ~/DominguezTS/public/pages/contact_es.html
+in  $HOME/DominguezTS/public/index.html
+ins  $HOME/DominguezTS/public/index_es.html
+ab  $HOME/DominguezTS/public/pages/about.html
+abs  $HOME/DominguezTS/public/pages/about_es.html
+abb  $HOME/DominguezTS/public/pages/about2.html
+abbs  $HOME/DominguezTS/public/pages/about2_es.html
+sr  $HOME/DominguezTS/public/pages/services.html
+srs  $HOME/DominguezTS/public/pages/services_es.html
+gal  $HOME/DominguezTS/public/pages/gallery.html
+gals  $HOME/DominguezTS/public/pages/gallery_es.html
+ap  $HOME/DominguezTS/public/pages/appointments.html
+aps  $HOME/DominguezTS/public/pages/appointments_es.html
+vap  $HOME/DominguezTS/public/pages/view-appointments.html
+vaps  $HOME/DominguezTS/public/pages/view-appointments_es.html
+cn  $HOME/DominguezTS/public/pages/contact.html
+cns  $HOME/DominguezTS/public/pages/contact_es.html
 
 ## Files for Granite Company
-gin  ~/granite-company/public/index.html
-gins  ~/granite-company/public/index_es.html
-gab  ~/granite-company/public/about.html
-gabs  ~/granite-company/public/about_es.html
-gsr ~/granite-company/public/services.html
-gsrs ~/granite-company/public/services_es.html
-gral ~/granite-company/public/gallery.html
-grals ~/granite-company/public/gallery_es.html
-gap ~/granite-company/public/appointments.html
-gaps ~/granite-company/public/appointments_es.html
-gvap ~/granite-company/public/view-appointments.html
-gvaps ~/granite-company/public/view-appointments_es.html
-gcn  ~/granite-company/public/contact.html
-gcns  ~/granite-company/public/contact_es.html
+gin  $HOME/granite-company/public/index.html
+gins  $HOME/granite-company/public/index_es.html
+gab  $HOME/granite-company/public/about.html
+gabs  $HOME/granite-company/public/about_es.html
+gsr  $HOME/granite-company/public/services.html
+gsrs  $HOME/granite-company/public/services_es.html
+gral  $HOME/granite-company/public/gallery.html
+grals  $HOME/granite-company/public/gallery_es.html
+gap  $HOME/granite-company/public/appointments.html
+gaps  $HOME/granite-company/public/appointments_es.html
+gvap  $HOME/granite-company/public/view-appointments.html
+gvaps  $HOME/granite-company/public/view-appointments_es.html
+gcn  $HOME/granite-company/public/contact.html
+gcns  $HOME/granite-company/public/contact_es.html
 
 ## Files for Heavenly Roofing Company
-rin  ~/roofing-company/public/index.html
-rins  ~/roofing-company/public/index_es.html
-rab  ~/roofing-company/public/about.html
-rabs  ~/roofing-company/public/about_es.html
-rsr ~/roofing-company/public/services.html
-rsrs ~/roofing-company/public/services_es.html
-rga ~/roofing-company/public/gallery.html
-rgas ~/roofing-company/public/gallery_es.html
-rap ~/roofing-company/public/appointments.html
-raps ~/roofing-company/public/appointments_es.html
-rvap ~/roofing-company/public/view-appointments.html
-rvaps ~/roofing-company/public/view-appointments_es.html
-rcn  ~/roofing-company/public/contact.html
-rcns  ~/roofing-company/public/contact_es.html
+rin  $HOME/roofing-company/public/index.html
+rins  $HOME/roofing-company/public/index_es.html
+rab  $HOME/roofing-company/public/about.html
+rabs  $HOME/roofing-company/public/about_es.html
+rsr  $HOME/roofing-company/public/services.html
+rsrs  $HOME/roofing-company/public/services_es.html
+rga  $HOME/roofing-company/public/gallery.html
+rgas  $HOME/roofing-company/public/gallery_es.html
+rap  $HOME/roofing-company/public/appointments.html
+raps  $HOME/roofing-company/public/appointments_es.html
+rvap  $HOME/roofing-company/public/view-appointments.html
+rvaps  $HOME/roofing-company/public/view-appointments_es.html
+rcn  $HOME/roofing-company/public/contact.html
+rcns  $HOME/roofing-company/public/contact_es.html
 
 ## Files for OK DEVS
-oin ~/okdevs/public/index.html
-oins ~/okdevs/public/index_es.html
-oab ~/okdevs/public/about.html
-oabs ~/okdevs/public/about_es.html
-ole ~/okdevs/public/letter.html
-oles ~/okdevs/public/letter_es.html
+oin  $HOME/okdevs/public/index.html
+oins  $HOME/okdevs/public/index_es.html
+oab  $HOME/okdevs/public/about.html
+oabs  $HOME/okdevs/public/about_es.html
+ole  $HOME/okdevs/public/letter.html
+oles  $HOME/okdevs/public/letter_es.html
 
 ## Files for Tito's Tire Shop
-tin  ~/tire-shop/public/index.html
-tins  ~/tire-shop/public/index_es.html
-tab  ~/tire-shop/public/about.html
-tabs  ~/tire-shop/public/about_es.html
-tsr ~/tire-shop/public/services.html
-tsrs ~/tire-shop/public/services_es.html
-tga ~/tire-shop/public/gallery.html
-tgas ~/tire-shop/public/gallery_es.html
-ttr ~/tire-shop/public/tire-recommendation.html
-ttrs ~/tire-shop/public/tire-recommendation_es.html
-tcn  ~/tire-shop/public/contact.html
-tcns  ~/tire-shop/public/contact_es.html
+tin  $HOME/tire-shop/public/index.html
+tins  $HOME/tire-shop/public/index_es.html
+tab  $HOME/tire-shop/public/about.html
+tabs  $HOME/tire-shop/public/about_es.html
+tsr  $HOME/tire-shop/public/services.html
+tsrs  $HOME/tire-shop/public/services_es.html
+tga  $HOME/tire-shop/public/gallery.html
+tgas  $HOME/tire-shop/public/gallery_es.html
+ttr  $HOME/tire-shop/public/tire-recommendation.html
+ttrs  $HOME/tire-shop/public/tire-recommendation_es.html
+tcn  $HOME/tire-shop/public/contact.html
+tcns  $HOME/tire-shop/public/contact_es.html
 
 ## These do not update automatically, but
 ## on the next new instance of a program:
 
 ## vim/neovim config
-cfv	${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
+cfv        ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
 
 ## zsh (shell) config
-cfz	$HOME/.config/zsh/.zshrc
+cfz        $HOME/.config/zsh/.zshrc
 
 ## aliases used by zsh (and potentially other shells)
-cfa	${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc
+cfa        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc
 
 ## profile file for login settings for zsh
-cfp	${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
+cfp        ${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile
 
 ## mutt (email client) config
-cfm	${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc
+cfm        ${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc
 
 ## newsboat (RSS reader)
-cfn	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config
+cfn        ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/config
 
 ## RSS urls for newsboat
-cfu	${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls
+cfu        ${XDG_CONFIG_HOME:-$HOME/.config}/newsboat/urls
 
 ## ncmpcpp (music player) keybinds file
-cfmb ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings
+cfmb       ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings
 
 ## ncmpcpp (music player) config
-cfmc ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config
+cfmc       ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/config
 
 ## lf (file browser) config
-cfl	${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc
+cfl        ${XDG_CONFIG_HOME:-$HOME/.config}/lf/lfrc
 
 ## lf's scope/preview file
-cfL	${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope
+cfL        ${XDG_CONFIG_HOME:-$HOME/.config}/lf/scope
 
 ## nsxiv (image viewer) key/script handler
-cfX	${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
+cfX        ${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
 
 ## Alias file in voidrice
-va voidrice/.config/shell/aliasrc
+va         $HOME/voidrice/.config/shell/aliasrc
 
 ## Profile file in voidrice
-vp voidrice/.config/shell/profile
+vp         $HOME/voidrice/.config/shell/profile
 
 ## Zshrc file in voidrice
-zr voidrice/.config/zsh/.zshrc
+zr         $HOME/voidrice/.config/zsh/.zshrc
