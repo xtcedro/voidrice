@@ -98,15 +98,15 @@ rlg       $HOME/roofing-company/public/login.html
 rrg       $HOME/roofing-company/public/register.html
 
 ## OK DEVS
-oin       $HOME/okdevs/public/index.html
-oins      $HOME/okdevs/public/index_es.html
-oab       $HOME/okdevs/public/about.html
-oabs      $HOME/okdevs/public/about_es.html
-ole       $HOME/okdevs/public/letter.html
-oles      $HOME/okdevs/public/letter_es.html
-ofp       $HOME/okdevs/public/forget-password.html
-olg       $HOME/okdevs/public/login.html
-org       $HOME/okdevs/public/register.html
+oin       $HOME/okdevs/public/pages/index.html
+oins      $HOME/okdevs/public/pages/index_es.html
+oab       $HOME/okdevs/public/pages/about.html
+oabs      $HOME/okdevs/public/pages/about_es.html
+ole       $HOME/okdevs/public/pages/letter.html
+oles      $HOME/okdevs/public/pages/letter_es.html
+ofp       $HOME/okdevs/public/pages/forget-password.html
+olg       $HOME/okdevs/public/pages/login.html
+org       $HOME/okdevs/public/pages/register.html
 
 ## Tito's Tire Shop
 tin       $HOME/tire-shop/public/index.html
