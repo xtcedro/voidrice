@@ -78,24 +78,47 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/* $ROOT/public/  && \
-	mv $ROOT/public/legal/* $ROOT/public/  && \
+	mv $ROOT/public/pages/home/* $ROOT/public/  && \
+	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
+	mv $ROOT/public/pages/about/* $ROOT/public/  && \
+	mv $ROOT/public/pages/services/* $ROOT/public/  && \
+	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
+	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
+	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
+	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	rm -rf DominguezTS && cd
+}
+
+
+okdupdate() {
+    cd $TMP && clone_repo okdevs && \
+    rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
+	mv $ROOT/public/pages/home/* $ROOT/public/  && \
+	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
+	mv $ROOT/public/pages/about/* $ROOT/public/  && \
+	mv $ROOT/public/pages/services/* $ROOT/public/  && \
+	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
+	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
+	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
+	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
+	rm -rf okdevs && cd
 }
 
 hrcupdate() {
     cd $TMP && clone_repo roofing-company && \
     rm -rf $ROOT/public/* && cp -r roofing-company/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
+	mv $ROOT/public/pages/home/* $ROOT/public/  && \
+	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
+	mv $ROOT/public/pages/about/* $ROOT/public/  && \
+	mv $ROOT/public/pages/services/* $ROOT/public/  && \
+	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
+	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
+	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
+	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	rm -rf roofing-company && cd
-}
-
-okdupdate() {
-    cd $TMP && clone_repo okdevs && \
-    rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
-	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
-	mv $ROOT/public/pages/* $ROOT/public/ && rm -rf $ROOT/public/pages && \
-	rm -rf okdevs && cd
 }
 
 voidupdate() {
