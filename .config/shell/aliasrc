@@ -67,12 +67,12 @@ clone_repo() {
 
 # Hardcoded aliases using clone_repo function
 alias \
-    void="clone_repo voidrice" \
-    tech="clone_repo DominguezTS" \
-    gran="clone_repo granite-company" \
-    okde="clone_repo okdevs" \
-    tire="clone_repo tire-shop" \
-    roof="clone_repo roofing-company"
+    void="clone_repo ~/voidrice" \
+    tech="clone_repo ~/DominguezTS" \
+    gran="clone_repo ~/granite-company" \
+    okde="clone_repo ~/okdevs" \
+    tire="clone_repo ~/tire-shop" \
+    roof="clone_repo ~/roofing-company"
 
 # Update commands
 dtsupdate() {
