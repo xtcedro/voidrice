@@ -99,6 +99,7 @@ okdupdate() {
 	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/letters/* $ROOT/public/  && \
+	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/videos/ && \
 	rm -rf okdevs && cd
 }
 
