@@ -50,10 +50,10 @@ alias \
 
 # SSH with hardcoded IPs
 alias \
-    ply="ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
-    dts="ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
-    okd="ssh -i keys/Milagros.pem admin@52.91.94.161" \
-    hrc="ssh -i keys/Milagros.pem admin@54.226.117.192"
+    ply="cd && ssh -i keys/Milagros.pem admin@ec2-54-235-226-132.compute-1.amazonaws.com" \
+    dts="cd && ssh -i keys/Milagros.pem admin@ec2-54-162-183-206.compute-1.amazonaws.com" \
+    okd="cd && ssh -i keys/Milagros.pem admin@52.91.94.161" \
+    hrc="cd && ssh -i keys/Milagros.pem admin@54.226.117.192"
 
 # Dynamic SSH function
 ssh_server() {
