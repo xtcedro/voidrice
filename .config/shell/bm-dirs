@@ -38,3 +38,7 @@ ojs   $HOME/okdevs/public/assets/js/
 rpu   $HOME/roofing-company/public/
 rpa   $HOME/roofing-company/public/pages/
 opa	  $HOME/okdevs/public/pages/
+
+opl	  $HOME/okdevs/public/pages/legal/
+rpl	  $HOME/roofing-company/public/pages/legal/
+dpl	  $HOME/DominguezTS/public/pages/legal/
