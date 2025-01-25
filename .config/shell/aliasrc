@@ -93,7 +93,6 @@ okdupdate() {
 	mv $ROOT/public/pages/home/* $ROOT/public/  && \
 	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
 	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/services/* $ROOT/public/  && \
 	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
