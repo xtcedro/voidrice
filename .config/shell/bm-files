@@ -21,7 +21,7 @@ sjs       /var/www/backend/server.js
 
 ## Dominguez Tech Solutions
 but       $HOME/DominguezTS/public/assets/css/buttons.css
-sec       $HOME/DominguezTS/public/assets/css/section.css
+sec       $HOME/DominguezTS/public/assets/css/sections.css
 for       $HOME/DominguezTS/public/assets/css/forms.css
 com       $HOME/DominguezTS/public/assets/css/components.css
 med		  $HOME/DominguezTS/public/assets/css/media.css
