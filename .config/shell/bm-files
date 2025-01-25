@@ -142,6 +142,8 @@ rau        $HOME/roofing-company/public/pages/authentication/login.html
 raus       $HOME/roofing-company/public/pages/authentication/login_es.html
 rrg        $HOME/roofing-company/public/pages/authentication/register.html
 rrgs       $HOME/roofing-company/public/pages/authentication/register_es.html
+rfp        $HOME/roofing-company/public/pages/authentication/forget-password.html
+rfps       $HOME/roofing-company/public/pages/authentication/forget-password_es.html
 rda        $HOME/roofing-company/public/pages/dashboard/dashboard.html
 rdas       $HOME/roofing-company/public/pages/dashboard/dashboard_es.html
 rac        $HOME/roofing-company/public/pages/legal/accessibility.html
