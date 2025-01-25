@@ -20,16 +20,23 @@ sql       /var/www/backend/database/schema.sql
 sjs       /var/www/backend/server.js
 
 ## Dominguez Tech Solutions
+but       $HOME/DominguezTS/public/assets/css/buttons.css
+sec       $HOME/DominguezTS/public/assets/css/section.css
+for       $HOME/DominguezTS/public/assets/css/forms.css
+com       $HOME/DominguezTS/public/assets/css/components.css
+med		  $HOME/DominguezTS/public/assets/css/media.css
+
+
 in        $HOME/DominguezTS/public/pages/home/index.html
 ins       $HOME/DominguezTS/public/pages/home/index_es.html
 ab        $HOME/DominguezTS/public/pages/about/about.html
 abs       $HOME/DominguezTS/public/pages/about/about_es.html
-abb        $HOME/DominguezTS/public/pages/about/about2.html
-abbs       $HOME/DominguezTS/public/pages/about/about2_es.html
+abb       $HOME/DominguezTS/public/pages/about/about2.html
+abbs      $HOME/DominguezTS/public/pages/about/about2_es.html
 ap        $HOME/DominguezTS/public/pages/appointments/appointments.html
 aps       $HOME/DominguezTS/public/pages/appointments/appointments_es.html
-vap        $HOME/DominguezTS/public/pages/appointments/view-appointments.html
-vaps       $HOME/DominguezTS/public/pages/appointments/view-appointments_es.html
+vap       $HOME/DominguezTS/public/pages/appointments/view-appointments.html
+vaps      $HOME/DominguezTS/public/pages/appointments/view-appointments_es.html
 au        $HOME/DominguezTS/public/pages/authentication/login.html
 aus       $HOME/DominguezTS/public/pages/authentication/login_es.html
 rg        $HOME/DominguezTS/public/pages/authentication/register.html
@@ -63,8 +70,8 @@ oin        $HOME/okdevs/public/pages/home/index.html
 oins       $HOME/okdevs/public/pages/home/index_es.html
 oab        $HOME/okdevs/public/pages/about/about.html
 oabs       $HOME/okdevs/public/pages/about/about_es.html
-oabb        $HOME/DominguezTS/public/pages/about/about2.html
-oabbs       $HOME/DominguezTS/public/pages/about/about2_es.html
+oabb       $HOME/DominguezTS/public/pages/about/about2.html
+oabbs      $HOME/DominguezTS/public/pages/about/about2_es.html
 oap        $HOME/okdevs/public/pages/appointments/appointments.html
 oaps       $HOME/okdevs/public/pages/appointments/appointments_es.html
 oau        $HOME/okdevs/public/pages/authentication/login.html
@@ -87,8 +94,8 @@ opv        $HOME/okdevs/public/pages/legal/privacy.html
 opvs       $HOME/okdevs/public/pages/legal/privacy_es.html
 otm        $HOME/okdevs/public/pages/legal/terms.html
 otms       $HOME/okdevs/public/pages/legal/terms_es.html
-ole       $HOME/okdevs/public/pages/letters/letter.html
-oles      $HOME/okdevs/public/pages/letters/letter_es.html
+ole        $HOME/okdevs/public/pages/letters/letter.html
+oles       $HOME/okdevs/public/pages/letters/letter_es.html
 
 ## Granite Company
 gin        $HOME/granite-company/public/pages/home/index.html
