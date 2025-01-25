@@ -9,10 +9,6 @@ alias rns="sudo systemctl reload nginx"
 # Use custom mbsync configuration if present.
 [ -f "$MBSYNCRC" ] && alias mbsync="mbsync -c $MBSYNCRC"
 
-# sudo aliases for system commands
-for cmd in mount umount sv pacman updatedb su shutdown poweroff reboot; do
-    alias $cmd="sudo $cmd"
-done
 
 # Verbose and safe commands
 alias \
