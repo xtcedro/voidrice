@@ -35,5 +35,6 @@ rjs   $HOME/roofing-company/public/assets/js/
 gjs   $HOME/granite-company/public/assets/js/
 ojs   $HOME/okdevs/public/assets/js/
 
-rpu        $HOME/roofing-company/public/
-rpa        $HOME/roofing-company/public/pages/
+rpu   $HOME/roofing-company/public/
+rpa   $HOME/roofing-company/public/pages/
+opa	  $HOME/okdevs/public/pages/
