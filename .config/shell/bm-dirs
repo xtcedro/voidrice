@@ -23,7 +23,7 @@ gsc   $HOME/granite-company/public/assets/css/
 osc   $HOME/okdevs/public/assets/css/
 
 pu    $HOME/DominguezTS/public/
-pa    $HOME/DominguezTS/pages/
+pa    $HOME/DominguezTS/public/pages/
 tpu   $HOME/tire-shop/public/
 rpu   $HOME/roofing-company/public/
 gpu   $HOME/granite-company/public/
