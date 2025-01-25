@@ -76,6 +76,8 @@ oabb       $HOME/okdevs/public/pages/about/about2.html
 oabbs      $HOME/okdevs/public/pages/about/about2_es.html
 oap        $HOME/okdevs/public/pages/appointments/appointments.html
 oaps       $HOME/okdevs/public/pages/appointments/appointments_es.html
+ovap       $HOME/okdevs/public/pages/appointments/view-appointments.html
+ovaps      $HOME/okdevs/public/pages/appointments/view-appointments_es.html
 oau        $HOME/okdevs/public/pages/authentication/login.html
 oaus       $HOME/okdevs/public/pages/authentication/login_es.html
 org        $HOME/okdevs/public/pages/authentication/register.html
