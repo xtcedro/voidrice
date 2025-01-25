@@ -128,8 +128,6 @@ gwt        $HOME/granite-company/public/pages/legal/warranty.html
 gwts       $HOME/granite-company/public/pages/legal/warranty_es.html
 
 ## Roofing Company
-rpu        $HOME/roofing-company/public/
-rpa        $HOME/roofing-company/public/pages/
 rin        $HOME/roofing-company/public/pages/home/index.html
 rins       $HOME/roofing-company/public/pages/home/index_es.html
 rab        $HOME/roofing-company/public/pages/about/about.html
