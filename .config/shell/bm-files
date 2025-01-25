@@ -72,8 +72,8 @@ oin        $HOME/okdevs/public/pages/home/index.html
 oins       $HOME/okdevs/public/pages/home/index_es.html
 oab        $HOME/okdevs/public/pages/about/about.html
 oabs       $HOME/okdevs/public/pages/about/about_es.html
-oabb       $HOME/DominguezTS/public/pages/about/about2.html
-oabbs      $HOME/DominguezTS/public/pages/about/about2_es.html
+oabb       $HOME/okdevs/public/pages/about/about2.html
+oabbs      $HOME/okdevs/public/pages/about/about2_es.html
 oap        $HOME/okdevs/public/pages/appointments/appointments.html
 oaps       $HOME/okdevs/public/pages/appointments/appointments_es.html
 oau        $HOME/okdevs/public/pages/authentication/login.html
