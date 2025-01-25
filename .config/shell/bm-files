@@ -41,8 +41,8 @@ au        $HOME/DominguezTS/public/pages/authentication/login.html
 aus       $HOME/DominguezTS/public/pages/authentication/login_es.html
 rg        $HOME/DominguezTS/public/pages/authentication/register.html
 rgs       $HOME/DominguezTS/public/pages/authentication/register_es.html
-fb        $HOME/DominguezTS/public/pages/authentication/forget-password.html
-fbs       $HOME/DominguezTS/public/pages/authentication/forget-password_es.html
+fp        $HOME/DominguezTS/public/pages/authentication/forget-password.html
+fps       $HOME/DominguezTS/public/pages/authentication/forget-password_es.html
 cn        $HOME/DominguezTS/public/pages/contact/contact.html
 cns       $HOME/DominguezTS/public/pages/contact/contact_es.html
 da        $HOME/DominguezTS/public/pages/dashboard/dashboard.html
