@@ -27,6 +27,24 @@ com       $HOME/DominguezTS/public/assets/css/components.css
 med		  $HOME/DominguezTS/public/assets/css/media.css
 
 
+
+## Roofing Company
+rbut       $HOME/roofing-company/public/assets/css/buttons.css
+rsec       $HOME/roofing-company/public/assets/css/sections.css
+rfor       $HOME/roofing-company/public/assets/css/forms.css
+rcom       $HOME/roofing-company/public/assets/css/components.css
+rmed	   $HOME/roofing-company/public/assets/css/media.css
+
+
+## OK DEVS
+but       $HOME/okdevs/public/assets/css/buttons.css
+osec      $HOME/okdevs/public/assets/css/sections.css
+ofor	  $HOME/okdevs/public/assets/css/forms.css
+ocom	  $HOME/okdevs/public/assets/css/components.css
+omed	  $HOME/okdevs/public/assets/css/media.css
+
+
+
 in        $HOME/DominguezTS/public/pages/home/index.html
 ins       $HOME/DominguezTS/public/pages/home/index_es.html
 ab        $HOME/DominguezTS/public/pages/about/about.html
