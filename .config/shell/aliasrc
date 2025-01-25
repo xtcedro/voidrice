@@ -98,6 +98,7 @@ okdupdate() {
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
+	mv $ROOT/public/pages/letters/* $ROOT/public/  && \
 	rm -rf okdevs && cd
 }
 
