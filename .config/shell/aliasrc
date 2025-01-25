@@ -12,7 +12,7 @@ alias rns="sudo systemctl reload nginx"
 # sudo aliases for system commands
 for cmd in mount umount sv pacman updatedb su shutdown poweroff reboot; do
     alias $cmd='sudo $cmd'
-done; unset cmd
+done
 
 # Verbose and safe commands
 alias \
