@@ -158,6 +158,8 @@ rgal       $HOME/roofing-company/public/pages/gallery/gallery.html
 rgals      $HOME/roofing-company/public/pages/gallery/gallery_es.html
 rcn        $HOME/roofing-company/public/pages/contact/contact.html
 rcns       $HOME/roofing-company/public/pages/contact/contact_es.html
+rap        $HOME/roofing-company/public/pages/appointments/appointments.html
+raps       $HOME/roofing-company/public/pages/appointments/appointments_es.html
 rau        $HOME/roofing-company/public/pages/authentication/login.html
 raus       $HOME/roofing-company/public/pages/authentication/login_es.html
 rrg        $HOME/roofing-company/public/pages/authentication/register.html
