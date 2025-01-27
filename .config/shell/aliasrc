@@ -99,7 +99,7 @@ rmcupdate() {
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
-	rm -rf DominguezTS && cd
+	rm -rf remodeling-company && cd
 }
 
 okdupdate() {
