@@ -88,6 +88,20 @@ dtsupdate() {
 }
 
 
+rmcupdate() {
+    cd $TMP && clone_repo remodeling-company && \
+    rm -rf $ROOT/public/* && cp -r remodeling-company/public/* $ROOT/public/ && \
+	mv $ROOT/public/pages/home/* $ROOT/public/  && \
+	mv $ROOT/public/pages/about/* $ROOT/public/  && \
+	mv $ROOT/public/pages/services/* $ROOT/public/  && \
+	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
+	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
+	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
+	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
+	rm -rf DominguezTS && cd
+}
+
 okdupdate() {
     cd $TMP && clone_repo okdevs && \
     rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
