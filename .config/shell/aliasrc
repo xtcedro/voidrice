@@ -78,10 +78,8 @@ dtsupdate() {
 	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
 	mv $ROOT/public/pages/about/* $ROOT/public/  && \
 	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/prices/* $ROOT/public/  && \
 	mv $ROOT/public/pages/* $ROOT/public/  && \
@@ -95,10 +93,8 @@ rmcupdate() {
 	mv $ROOT/public/pages/home/* $ROOT/public/  && \
 	mv $ROOT/public/pages/about/* $ROOT/public/  && \
 	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	rm -rf remodeling-company && cd
 }
@@ -109,10 +105,8 @@ okdupdate() {
 	mv $ROOT/public/pages/home/* $ROOT/public/  && \
 	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
 	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/letters/* $ROOT/public/  && \
 	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
@@ -126,10 +120,8 @@ hrcupdate() {
 	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
 	mv $ROOT/public/pages/about/* $ROOT/public/  && \
 	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/dashboard/* $ROOT/public/  && \
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	rm -rf roofing-company && cd
 }
