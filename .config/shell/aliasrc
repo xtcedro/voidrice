@@ -84,6 +84,7 @@ dtsupdate() {
 	mv $ROOT/public/pages/authentication/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/prices/* $ROOT/public/  && \
+	mv $ROOT/public/pages/* $ROOT/public/  && \
 	rm -rf DominguezTS && cd
 }
 
