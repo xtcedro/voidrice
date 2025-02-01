@@ -91,7 +91,7 @@ nsupdate() {
 	rm -rf /var/www/backend/*
 	cd $TMP && clone_repo NodeLite && \
 	cp -r NodeLite/* /var/www/backend/ && \
-	rm -rf NodeLite/ && ba \
+	rm -rf NodeLite/ && ba && npm install \
 }
 
 rmcupdate() {
