@@ -100,10 +100,10 @@ gameupdate() {
  cd $TMP && clone_repo tic-tac-toe && \
  cp -r tic-tac-toe/public/* $ROOT/public/ && \
  mv $ROOT/public/pages/home/* $ROOT/public/  && \
- rm -rf $ROOT/public/pages/ \
+ rm -rf $ROOT/public/pages/ && cd \
 }
- 
- 
+
+
 
 rmcupdate() {
     cd $TMP && clone_repo remodeling-company && \
@@ -114,7 +114,7 @@ rmcupdate() {
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
- rm -rf $ROOT/public/pages/ \
+    rm -rf $ROOT/public/pages/ \
 	rm -rf remodeling-company && cd
 }
 
@@ -129,7 +129,7 @@ okdupdate() {
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/letters/* $ROOT/public/  && \
 	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
- rm -rf $ROOT/public/pages/ \
+    rm -rf $ROOT/public/pages/ \
 	rm -rf okdevs && cd
 }
 
@@ -144,7 +144,7 @@ hrcupdate() {
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	rm -rf roofing-company && cd \
-rm -rf $ROOT/public/pages/ \
+    rm -rf $ROOT/public/pages/ \
 }
 
 voidupdate() {
