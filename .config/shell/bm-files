@@ -19,6 +19,9 @@ vbz       $HOME/voidrice/.config/zsh/.zshrc
 sql       /var/www/backend/database/schema.sql
 sjs       /var/www/backend/server.js
 
+## NodeJS server
+nod		  $HOME/NodeLite/server.js
+
 ## Dominguez Tech Solutions
 mai       $HOME/DominguezTS/public/assets/css/main.css
 but       $HOME/DominguezTS/public/assets/css/buttons.css
