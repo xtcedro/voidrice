@@ -100,6 +100,7 @@ gameupdate() {
  cd $TMP && clone_repo tic-tac-toe && \
  cp -r tic-tac-toe/public/* $ROOT/public/ && \
  mv $ROOT/public/pages/home/* $ROOT/public/  && \
+ rm -rf tic-tac-toe && \
  rm -rf $ROOT/public/pages/ && cd \
 }
 
