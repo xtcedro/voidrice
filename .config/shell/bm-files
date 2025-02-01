@@ -21,6 +21,7 @@ sjs       /var/www/backend/server.js
 
 ## NodeJS server
 nod		  $HOME/NodeLite/server.js
+apr		  $HOME/NodeLite/routes/appointments.js
 
 ## Dominguez Tech Solutions
 mai       $HOME/DominguezTS/public/assets/css/main.css
