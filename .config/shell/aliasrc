@@ -86,6 +86,12 @@ dtsupdate() {
 	rm -rf DominguezTS && cd
 }
 
+nsupdate() {
+	rm -rf /var/www/backend/*
+	cd $TMP && clone_repo NodeLite && \
+	cp -r NodeLite/* /var/www/backend/ && \
+	rm -rf NodeLite/ && ba \
+}
 
 rmcupdate() {
     cd $TMP && clone_repo remodeling-company && \
