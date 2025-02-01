@@ -68,7 +68,8 @@ alias \
     gran="clone_repo granite-company" \
     okde="clone_repo okdevs" \
     tire="clone_repo tire-shop" \
-    roof="clone_repo roofing-company"
+    roof="clone_repo roofing-company" \
+    ndjs="clone_repo NodeLite" \
 
 # Update commands
 dtsupdate() {
