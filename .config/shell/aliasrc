@@ -144,7 +144,7 @@ hrcupdate() {
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/ && \
-	rm -rf roofing-company && cd \
+	rm -rf roofing-company && cd && \
     rm -rf $ROOT/public/pages \
 }
 
