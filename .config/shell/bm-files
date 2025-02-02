@@ -109,7 +109,6 @@ rsr        $HOME/roofing-company/public/pages/services/services.html
 rcn        $HOME/roofing-company/public/pages/contact/contact.html
 rap        $HOME/roofing-company/public/pages/appointments/appointments.html
 rgal       $HOME/roofing-company/public/pages/gallery/gallery.html
-rgals      $HOME/roofing-company/public/pages/gallery/gallery_es.html
 rac        $HOME/roofing-company/public/pages/legal/accessibility.html
 rck        $HOME/roofing-company/public/pages/legal/cookies.html
 rdi        $HOME/roofing-company/public/pages/legal/disclaimer.html
