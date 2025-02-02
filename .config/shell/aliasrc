@@ -68,6 +68,7 @@ alias \
     gran="clone_repo granite-company" \
     okde="clone_repo okdevs" \
     tire="clone_repo tire-shop" \
+    reme="clone_repo remodeling-company" \
     roof="clone_repo roofing-company" \
     ndjs="clone_repo NodeLite" \
 
