@@ -133,6 +133,25 @@ trf        $HOME/tire-shop/public/pages/legal/refund.html
 ttm        $HOME/tire-shop/public/pages/legal/terms.html
 twt        $HOME/tire-shop/public/pages/legal/warranty.html
 
+## Remodeling Company
+min        $HOME/remodeling-company/public/pages/home/index.html
+mab        $HOME/remodeling-company/public/pages/about/about.html
+msr        $HOME/remodeling-company/public/pages/services/services.html
+mrg        $HOME/remodeling-company/public/pages/authentication/register.html
+mpr        $HOME/remodeling-company/public/pages/prices/pricing.html
+mcn        $HOME/remodeling-company/public/pages/contact/contact.html
+mcns       $HOME/remodeling-company/public/pages/contact/contact_es.html
+mgal       $HOME/remodeling-company/public/pages/gallery/gallery.html
+map        $HOME/remodeling-company/public/pages/appointments/appointments.html
+mvap       $HOME/remodeling-company/public/pages/appointments/view-appointments.html
+mac        $HOME/remodeling-company/public/pages/legal/accessibility.html
+mck        $HOME/remodeling-company/public/pages/legal/cookies.html
+mdi        $HOME/remodeling-company/public/pages/legal/disclaimer.html
+mpv        $HOME/remodeling-company/public/pages/legal/privacy.html
+mrf        $HOME/remodeling-company/public/pages/legal/refund.html
+mtm        $HOME/remodeling-company/public/pages/legal/terms.html
+mwt        $HOME/remodeling-company/public/pages/legal/warranty.html
+
 ## Additional Configurations
 cfv       ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
 cfz       $HOME/.config/zsh/.zshrc
@@ -149,3 +168,5 @@ cfX       ${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
 va        $HOME/voidrice/.config/shell/aliasrc
 vp        $HOME/voidrice/.config/shell/profile
 zr        $HOME/voidrice/.config/zsh/.zshrc
+
+
