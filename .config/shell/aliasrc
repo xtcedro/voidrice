@@ -85,7 +85,7 @@ dtsupdate() {
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	mv $ROOT/public/pages/prices/* $ROOT/public/  && \
 	mv $ROOT/public/pages/* $ROOT/public/  && \
-rm -rf $ROOT/public/pages/ \
+        rm -rf $ROOT/public/pages/ \
 	rm -rf DominguezTS && cd
 }
 
@@ -116,7 +116,7 @@ rmcupdate() {
 	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
 	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
 	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
-    rm -rf $ROOT/public/pages/ \
+        rm -rf $ROOT/public/pages/ \
 	rm -rf remodeling-company && cd
 }
 
@@ -150,7 +150,8 @@ hrcupdate() {
 }
 
 voidupdate() {
-    rm -rf ~/.config && rm -rf ~/.local && cd $TMP && \
+    rm -rf ~/.config && rm -rf ~/.local/share && \
+    rm -rf ~/local/ && cd $TMP && \
     clone_repo voidrice && \
     cp -r voidrice/.local ~/. && cp -r voidrice/.config ~/. && \
     rm -rf voidrice && cd
