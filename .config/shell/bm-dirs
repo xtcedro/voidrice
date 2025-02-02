@@ -24,6 +24,7 @@ osc   $HOME/okdevs/public/assets/css/
 
 pu    $HOME/DominguezTS/public/
 pa    $HOME/DominguezTS/public/pages/
+
 tpu   $HOME/tire-shop/public/
 rpu   $HOME/roofing-company/public/
 gpu   $HOME/granite-company/public/
@@ -44,3 +45,8 @@ rpl	  $HOME/roofing-company/public/pages/legal/
 dpl	  $HOME/DominguezTS/public/pages/legal/
 
 ndj   $HOME/NodeLite/
+
+mpu    $HOME/remodeling-company/public/
+mpa    $HOME/remodeling-company/public/pages/
+msc    $HOME/remodeling-company/public/assets/css/
+mjs    $HOME/remodeling-company/public/assets/js/
