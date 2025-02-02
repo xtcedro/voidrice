@@ -150,7 +150,7 @@ hrcupdate() {
 }
 
 voidupdate() {
-    rm -rf ~/.config ~/.local && cd $TMP && \
+    rm -rf ~/.config && rm -rf ~/.local && cd $TMP && \
     clone_repo voidrice && \
     cp -r voidrice/.local ~/. && cp -r voidrice/.config ~/. && \
     rm -rf voidrice && cd
