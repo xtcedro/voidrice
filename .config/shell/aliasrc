@@ -76,16 +76,16 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/home/* $ROOT/public/  && \
-	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
-	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
-	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
-	mv $ROOT/public/pages/prices/* $ROOT/public/  && \
-	mv $ROOT/public/pages/* $ROOT/public/  && \
-        rm -rf $ROOT/public/pages/ \
+	cp $ROOT/public/pages/home/* $ROOT/public/  && \
+	cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+	cp $ROOT/public/pages/about/* $ROOT/public/  && \
+	cp $ROOT/public/pages/services/* $ROOT/public/  && \
+	cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+	cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+	cp $ROOT/public/pages/prices/* $ROOT/public/  && \
+	cp $ROOT/public/pages/* $ROOT/public/  && \
+    rm -rf $ROOT/public/pages/ \
 	rm -rf DominguezTS && cd
 }
 
@@ -110,26 +110,26 @@ gameupdate() {
 rmcupdate() {
     cd $TMP && clone_repo remodeling-company && \
     rm -rf $ROOT/public/* && cp -r remodeling-company/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/home/* $ROOT/public/  && \
-	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
-	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
-        rm -rf $ROOT/public/pages/ \
+	cp $ROOT/public/pages/home/* $ROOT/public/  && \
+	cp $ROOT/public/pages/about/* $ROOT/public/  && \
+	cp $ROOT/public/pages/services/* $ROOT/public/  && \
+	cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+	cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+    rm -rf $ROOT/public/pages/ \
 	rm -rf remodeling-company && cd
 }
 
 okdupdate() {
     cd $TMP && clone_repo okdevs && \
     rm -rf $ROOT/public/* && cp -r okdevs/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/home/* $ROOT/public/  && \
-	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
-	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
-	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/appointments/* $ROOT/public/  && \
-	mv $ROOT/public/pages/letters/* $ROOT/public/  && \
+	cp $ROOT/public/pages/home/* $ROOT/public/  && \
+	cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+	cp $ROOT/public/pages/about/* $ROOT/public/  && \
+	cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+	cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+	cp $ROOT/public/pages/letters/* $ROOT/public/  && \
 	cp ~/Videos/rethinkinghumanity.mp4 $ROOT/public/assets/videos/ && \
     rm -rf $ROOT/public/pages/ \
 	rm -rf okdevs && cd
@@ -138,13 +138,13 @@ okdupdate() {
 hrcupdate() {
     cd $TMP && clone_repo roofing-company && \
     rm -rf $ROOT/public/* && cp -r roofing-company/public/* $ROOT/public/ && \
-	mv $ROOT/public/pages/home/* $ROOT/public/  && \
-	mv $ROOT/public/pages/legal/* $ROOT/public/  && \
-	mv $ROOT/public/pages/about/* $ROOT/public/  && \
-	mv $ROOT/public/pages/services/* $ROOT/public/  && \
-	mv $ROOT/public/pages/gallery/* $ROOT/public/  && \
-	mv $ROOT/public/pages/contact/* $ROOT/public/  && \
-	mv $ROOT/public/pages/appointments/* $ROOT/public/ && \
+	cp $ROOT/public/pages/home/* $ROOT/public/  && \
+	cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+	cp $ROOT/public/pages/about/* $ROOT/public/  && \
+	cp $ROOT/public/pages/services/* $ROOT/public/  && \
+	cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
+	cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+	cp $ROOT/public/pages/appointments/* $ROOT/public/ && \
 	rm -rf roofing-company && cd && \
     rm -rf $ROOT/public/pages \
 }
