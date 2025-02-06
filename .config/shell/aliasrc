@@ -87,6 +87,7 @@ dtsupdate() {
 	cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
     rm -rf $ROOT/public/pages/ && \
 	rm -rf DominguezTS && cd
+    cp /var/www/html/public/assets/css/chabot.css /var/www/html/public
 }
 
 nsupdate() {
