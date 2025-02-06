@@ -85,6 +85,7 @@ dtsupdate() {
 	cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
 	cp $ROOT/public/pages/prices/* $ROOT/public/ && \
 	cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
+	cp $ROOT/public/assets/css/chatbot.css $ROOT/public/ && \
     rm -rf $ROOT/public/pages/ && \
 	rm -rf DominguezTS && cd
 }
