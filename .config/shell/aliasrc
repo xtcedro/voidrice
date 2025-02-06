@@ -76,17 +76,32 @@ alias \
 dtsupdate() {
     cd $TMP && clone_repo DominguezTS && \
     rm -rf $ROOT/public/* && cp -r DominguezTS/public/* $ROOT/public/ && \
-	cp $ROOT/public/pages/home/* $ROOT/public/  && \
-	cp $ROOT/public/pages/legal/* $ROOT/public/  && \
-	cp $ROOT/public/pages/about/* $ROOT/public/  && \
-	cp $ROOT/public/pages/services/* $ROOT/public/  && \
-	cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
-	cp $ROOT/public/pages/contact/* $ROOT/public/  && \
-	cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
-	cp $ROOT/public/pages/prices/* $ROOT/public/ && \
-	cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
+    cp $ROOT/public/pages/home/* $ROOT/public/  && \
+    cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+    cp $ROOT/public/pages/about/* $ROOT/public/  && \
+    cp $ROOT/public/pages/services/* $ROOT/public/  && \
+    cp $ROOT/public/pages/gallery/* $ROOT/public/  && \
+    cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+    cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+    cp $ROOT/public/pages/prices/* $ROOT/public/ && \
+    cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
     rm -rf $ROOT/public/pages/ && \
-	rm -rf DominguezTS && cd
+    rm -rf DominguezTS && cd
+}
+
+ccupdate() {
+    cd $TMP && clone_repo crashcourse && \
+    rm -rf $ROOT/public/* && cp -r crashcourse/public/* $ROOT/public/ && \
+    cp $ROOT/public/pages/home/* $ROOT/public/  && \
+    cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+    cp $ROOT/public/pages/about/* $ROOT/public/  && \
+    cp $ROOT/public/pages/services/* $ROOT/public/  && \
+    cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+    cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+    cp $ROOT/public/pages/prices/* $ROOT/public/ && \
+    cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
+    rm -rf $ROOT/public/pages/ && \
+    rm -rf crashcourse && cd
 }
 
 nsupdate() {
