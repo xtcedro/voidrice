@@ -17,6 +17,7 @@ ngi   /etc/nginx/sites-available/
 ba    /var/www/backend/
 
 sc    $HOME/DominguezTS/public/assets/css/
+csc   $HOME/crashcourse/public/assets/css/
 tsc   $HOME/tire-shop/public/assets/css/
 rsc   $HOME/roofing-company/public/assets/css/
 gsc   $HOME/granite-company/public/assets/css/
