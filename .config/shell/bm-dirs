@@ -32,12 +32,14 @@ gpu   $HOME/granite-company/public/
 opu   $HOME/okdevs/public/
 
 js    $HOME/DominguezTS/public/assets/js/
+cjs   $HOME/crashcourse/public/assets/js/
 tjs   $HOME/tire-shop/public/assets/js/
 rjs   $HOME/roofing-company/public/assets/js/
 gjs   $HOME/granite-company/public/assets/js/
 ojs   $HOME/okdevs/public/assets/js/
 
 rpu   $HOME/roofing-company/public/
+cpu   $HOME/crashcourse/public/
 rpa   $HOME/roofing-company/public/pages/
 opa	  $HOME/okdevs/public/pages/
 
