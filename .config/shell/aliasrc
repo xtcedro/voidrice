@@ -108,6 +108,8 @@ nsupdate() {
 	rm -rf /var/www/backend/* && \
 	cd $TMP && clone_repo NodeLite && \
 	cp -r NodeLite/* /var/www/backend/ && \
+	rm -rf /var/www/backend/nginx && \
+	rm -rf /var/www/backend/public && \
 	rm -rf NodeLite/ && ba && npm install \
 }
 
