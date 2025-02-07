@@ -58,7 +58,6 @@ rani	  $HOME/okdevs/public/assets/css/animations.css
 in        $HOME/DominguezTS/public/pages/home/index.html
 ab        $HOME/DominguezTS/public/pages/about/about.html
 sr        $HOME/DominguezTS/public/pages/services/services.html
-rg        $HOME/DominguezTS/public/pages/authentication/register.html
 pr        $HOME/DominguezTS/public/pages/prices/pricing.html
 cn        $HOME/DominguezTS/public/pages/contact/contact.html
 cns       $HOME/DominguezTS/public/pages/contact/contact_es.html
@@ -168,5 +167,3 @@ cfX       ${XDG_CONFIG_HOME:-$HOME/.config}/nsxiv/exec/key-handler
 va        $HOME/voidrice/.config/shell/aliasrc
 vp        $HOME/voidrice/.config/shell/profile
 zr        $HOME/voidrice/.config/zsh/.zshrc
-
-
