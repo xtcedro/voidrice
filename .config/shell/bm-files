@@ -153,21 +153,22 @@ mwt        $HOME/remodeling-company/public/pages/legal/warranty.html
 
 ## Dominguez Tech Solutions - crashcourse Repo
 
-cin        $HOME/crashcourse/public/pages/home/index.html  
-cab        $HOME/crashcourse/public/pages/about/about.html  
-csr        $HOME/crashcourse/public/pages/services/services.html  
-cpr        $HOME/crashcourse/public/pages/prices/pricing.html  
-ccn        $HOME/crashcourse/public/pages/contact/contact.html  
-ccns       $HOME/crashcourse/public/pages/contact/contact_es.html  
-cgal       $HOME/crashcourse/public/pages/gallery/gallery.html  
-cap        $HOME/crashcourse/public/pages/appointments/appointments.html  
-cvap       $HOME/crashcourse/public/pages/appointments/view-appointments.html  
-cac        $HOME/crashcourse/public/pages/legal/accessibility.html  
-cck        $HOME/crashcourse/public/pages/legal/cookies.html  
-cdi        $HOME/crashcourse/public/pages/legal/disclaimer.html  
-cpv        $HOME/crashcourse/public/pages/legal/privacy.html  
-crf        $HOME/crashcourse/public/pages/legal/refund.html  
-ctm        $HOME/crashcourse/public/pages/legal/terms.html  
+cin        $HOME/crashcourse/public/pages/home/index.html
+cab        $HOME/crashcourse/public/pages/about/about.html
+csr        $HOME/crashcourse/public/pages/services/services.html
+ccb        $HOME/crashcourse/public/pages/chatbot/chatbot.html
+cpr        $HOME/crashcourse/public/pages/prices/pricing.html
+ccn        $HOME/crashcourse/public/pages/contact/contact.html
+ccns       $HOME/crashcourse/public/pages/contact/contact_es.html
+cgal       $HOME/crashcourse/public/pages/gallery/gallery.html
+cap        $HOME/crashcourse/public/pages/appointments/appointments.html
+cvap       $HOME/crashcourse/public/pages/appointments/view-appointments.html
+cac        $HOME/crashcourse/public/pages/legal/accessibility.html
+cck        $HOME/crashcourse/public/pages/legal/cookies.html
+cdi        $HOME/crashcourse/public/pages/legal/disclaimer.html
+cpv        $HOME/crashcourse/public/pages/legal/privacy.html
+crf        $HOME/crashcourse/public/pages/legal/refund.html
+ctm        $HOME/crashcourse/public/pages/legal/terms.html
 cwt        $HOME/crashcourse/public/pages/legal/warranty.html
 
 
