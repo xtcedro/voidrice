@@ -151,24 +151,7 @@ mrf        $HOME/remodeling-company/public/pages/legal/refund.html
 mtm        $HOME/remodeling-company/public/pages/legal/terms.html
 mwt        $HOME/remodeling-company/public/pages/legal/warranty.html
 
-## Dominguez Tech Solutions - Crash Course Repo
 
-cin      $HOME/DominguezTS/public/pages/home/index.html
-cab        $HOME/DominguezTS/public/pages/about/about.html
-csr        $HOME/DominguezTS/public/pages/services/services.html
-cpr        $HOME/DominguezTS/public/pages/prices/pricing.html
-ccn        $HOME/DominguezTS/public/pages/contact/contact.html
-ccns       $HOME/DominguezTS/public/pages/contact/contact_es.html
-cgal       $HOME/DominguezTS/public/pages/gallery/gallery.html
-cap        $HOME/DominguezTS/public/pages/appointments/appointments.html
-cvap       $HOME/DominguezTS/public/pages/appointments/view-appointments.html
-cac        $HOME/DominguezTS/public/pages/legal/accessibility.html
-cck        $HOME/DominguezTS/public/pages/legal/cookies.html
-cdi        $HOME/DominguezTS/public/pages/legal/disclaimer.html
-cpv        $HOME/DominguezTS/public/pages/legal/privacy.html
-crf        $HOME/DominguezTS/public/pages/legal/refund.html
-ctm        $HOME/DominguezTS/public/pages/legal/terms.html
-cwt        $HOME/DominguezTS/public/pages/legal/warranty.html
 
 ## Additional Configurations
 cfv       ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/init.vim
