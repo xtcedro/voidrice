@@ -1,103 +1,113 @@
 #!/bin/bash
 
-# Ensure script is run as root
+# Ensure the script runs as root
 if [[ $EUID -ne 0 ]]; then
-   whiptail --title "Error" --msgbox "This script must be run as root!" 10 50
-   exit 1
+    whiptail --msgbox "This script must be run as root. Try using sudo." 10 60
+    exit 1
 fi
 
-# Step 1: System Update & Install Dependencies
-whiptail --title "System Update" --msgbox "Updating system and installing dependencies..." 10 50
+# System Update & Package Installation
+whiptail --msgbox "Updating system and installing necessary packages..." 10 60
 apt update && apt upgrade -y
-apt install -y git nodejs npm neovim ufw fail2ban mariadb-server nginx zsh neofetch
+apt install -y git nodejs npm neovim ufw fail2ban mariadb-server nginx certbot python3-certbot-nginx zsh neofetch 
 
-# Step 2: Configure GitHub Account
-GITHUB_NAME=$(whiptail --title "GitHub Setup" --inputbox "Enter your GitHub Name:" 10 50 3>&1 1>&2 2>&3)
-GITHUB_EMAIL=$(whiptail --title "GitHub Setup" --inputbox "Enter your GitHub Email:" 10 50 3>&1 1>&2 2>&3)
-
-if [[ -n "$GITHUB_NAME" && -n "$GITHUB_EMAIL" ]]; then
-    git config --global user.name "$GITHUB_NAME"
-    git config --global user.email "$GITHUB_EMAIL"
-    whiptail --title "GitHub Setup" --msgbox "GitHub details configured successfully!" 10 50
-else
-    whiptail --title "GitHub Setup" --msgbox "GitHub configuration skipped!" 10 50
-fi
-
-# Step 3: Generate SSH Key & Add to Agent
-whiptail --title "SSH Key Generation" --msgbox "Generating SSH key for GitHub..." 10 50
-ssh-keygen -t ed25519 -C "$GITHUB_EMAIL" -f "$HOME/.ssh/github_id_ed25519" -N ""
-eval "$(ssh-agent -s)"
-ssh-add "$HOME/.ssh/github_id_ed25519"
-
-# Step 4: Display SSH Key for GitHub Setup
-PUBLIC_KEY=$(cat "$HOME/.ssh/github_id_ed25519.pub")
-whiptail --title "Add SSH Key to GitHub" --msgbox "Copy the following SSH key and add it to GitHub:\n\n$PUBLIC_KEY\n\nGo to GitHub -> Settings -> SSH Keys -> Add Key." 15 70
-
-# Step 5: Configure Firewall
-whiptail --title "Firewall Configuration" --msgbox "Configuring UFW firewall rules..." 10 50
+# Configure Firewall (UFW)
+whiptail --msgbox "Configuring firewall rules..." 10 60
 ufw allow 443
+ufw allow http
+ufw allow https
+ufw allow ssh
+ufw allow 22
 ufw allow 80
 ufw allow 8080
-ufw allow OpenSSH
 ufw allow 'Nginx Full'
 ufw enable
 
-# Step 6: Secure SSH Configuration
-whiptail --title "SSH Configuration" --msgbox "Opening SSH config for security tweaks..." 10 50
+# SSH Configuration
+whiptail --msgbox "Editing SSH configuration for security. Press Enter, modify as needed, then save & exit." 10 60
 nano /etc/ssh/sshd_config
+systemctl restart ssh
 
-# Step 7: Enable & Start Services
-whiptail --title "Enabling Services" --msgbox "Enabling and starting Nginx & Fail2Ban..." 10 50
-systemctl enable nginx fail2ban
-systemctl start nginx fail2ban
+# Enable & Start Essential Services
+whiptail --msgbox "Enabling and starting essential services (Nginx, Fail2Ban)..." 10 60
+systemctl enable --now nginx fail2ban
 
-# Step 8: Clone NodeLite Repository
-whiptail --title "Cloning NodeLite" --msgbox "Cloning the NodeLite repository..." 10 50
-cd /opt || exit
-git clone https://github.com/xtcedro/NodeLite.git
+# GitHub SSH Key Setup
+whiptail --msgbox "Generating SSH Key for GitHub access..." 10 60
+ssh-keygen -t ed25519 -C "$(whiptail --inputbox "Enter your GitHub email:" 10 60 3>&1 1>&2 2>&3)"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+whiptail --msgbox "Copy your SSH key and add it to GitHub: $(cat ~/.ssh/id_ed25519.pub)" 15 80
 
-# Step 9: Move Backend Files to /var/www/backend
-whiptail --title "Setting Up Backend" --msgbox "Moving backend files to /var/www/backend/..." 10 50
-mkdir -p /var/www/backend
-cp -r /opt/NodeLite/* /var/www/backend/
-chown -R www-data:www-data /var/www/backend
-chmod -R 755 /var/www/backend
-
-# Step 10: Install Dependencies
-whiptail --title "Installing Node.js Dependencies" --msgbox "Running npm install to set up backend..." 10 50
-cd /var/www/backend || exit
+# Clone NodeLite Backend & Setup PM2
+whiptail --msgbox "Setting up Node.js backend..." 10 60
+mkdir -p /var/www/backend && cd /var/www/backend
+git clone https://github.com/xtcedro/NodeLite.git .
 npm install
 
-# Step 11: Install & Configure PM2
-whiptail --title "Installing PM2" --msgbox "Installing PM2 process manager..." 10 50
-npm install -g pm2@latest
-
-# Ask the user for the PM2 process name
-PM2_NAME=$(whiptail --title "PM2 Process Name" --inputbox "Enter a name for your PM2 process:" 10 50 3>&1 1>&2 2>&3)
-
-if [[ -z "$PM2_NAME" ]]; then
-    PM2_NAME="backend-service" # Default name if none is provided
-fi
-
-# Step 12: Start the Backend with PM2
-whiptail --title "Starting Backend with PM2" --msgbox "Starting Node.js backend using PM2..." 10 50
-cd /var/www/backend || exit
-pm2 start server.js --name "$PM2_NAME"
-pm2 save
+APP_NAME=$(whiptail --inputbox "Enter a name for your Node.js app in PM2:" 10 60 3>&1 1>&2 2>&3)
+pm2 start server.js --name "$APP_NAME"
 pm2 startup systemd
+pm2 save
 
-# Step 13: Install & Configure Zsh
-whiptail --title "Installing Zsh" --msgbox "Installing and setting up Zsh shell..." 10 50
-chsh -s /bin/zsh "$USER"
+# Install Zsh & Clone Voidrice
+whiptail --msgbox "Installing Zsh and cloning Voidrice for customization..." 10 60
+chsh -s /bin/zsh
+git clone https://github.com/xtcedro/voidrice.git ~/voidrice
+whiptail --msgbox "Voidrice has been cloned. You may need to manually apply configurations." 10 60
 
-# Step 14: Clone Voidrice Dotfiles
-whiptail --title "Cloning Voidrice" --msgbox "Cloning Voidrice configuration files..." 10 50
-cd "$HOME" || exit
-git clone https://github.com/xtcedro/voidrice.git "$HOME/.voidrice"
+# Run Certbot & Dry Run (No Whiptail for Certbot)
+certbot --nginx
+certbot renew --dry-run
 
-# Step 15: Set Up Neofetch
-whiptail --title "Setting Up Neofetch" --msgbox "Adding Neofetch to Zsh startup..." 10 50
-echo "neofetch" >> "$HOME/.zshrc"
+# Set up auto-renewal of SSL certificates
+echo "0 0 * * * certbot renew --quiet" | crontab -
+
+# ==============================
+# MariaDB Secure Installation & Setup
+# ==============================
+
+whiptail --msgbox "Configuring MariaDB security settings..." 10 60
+mysql_secure_installation <<EOF
+
+Y
+n
+Y
+Y
+Y
+Y
+EOF
+
+# Create database and user
+DB_NAME=$(whiptail --inputbox "Enter the database name:" 10 60 3>&1 1>&2 2>&3)
+DB_USER=$(whiptail --inputbox "Enter the database username:" 10 60 3>&1 1>&2 2>&3)
+DB_PASS=$(whiptail --passwordbox "Enter the database password:" 10 60 3>&1 1>&2 2>&3)
+
+mysql -u root -p <<EOF
+CREATE DATABASE $DB_NAME;
+CREATE USER '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';
+GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost';
+FLUSH PRIVILEGES;
+EOF
+
+# ==============================
+# Environment Variable Setup
+# ==============================
+whiptail --msgbox "Setting up environment variables for the backend..." 10 60
+
+cat <<EOF > /var/www/backend/.env
+PORT=3000
+DB_HOST=localhost
+DB_USER=$DB_USER
+DB_PASS=$DB_PASS
+DB_NAME=$DB_NAME
+EOF
+
+chown $(whoami):$(whoami) /var/www/backend/.env
+chmod 600 /var/www/backend/.env
+
+# Restart PM2 to apply changes
+pm2 restart "$APP_NAME"
 
 # Final Success Message
-whiptail --title "Setup Complete" --msgbox "✅ Backend setup is complete! 🚀\n\n- Node.js backend is running at /var/www/backend/\n- Cloned NodeLite successfully\n- Firewall & security configured\n- PM2 process started as '$PM2_NAME'\n- **Zsh shell installed** and set as default\n- **Voidrice dotfiles cloned**\n- **Neofetch added to shell startup**\n\nUse 'pm2 list' to check running processes!" 15 70
+whiptail --msgbox "Setup completed successfully! 🚀 Your server is now fully configured with MariaDB, Node.js, PM2, and security enhancements." 10 60
