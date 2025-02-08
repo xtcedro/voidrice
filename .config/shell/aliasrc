@@ -100,6 +100,7 @@ ccupdate() {
     cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
     cp $ROOT/public/pages/prices/* $ROOT/public/ && \
     cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
+    cp $ROOT/public/pages/crashcourse/* $ROOT/public/ && \
     rm -rf $ROOT/public/pages/ && \
     rm -rf crashcourse && cd
 }
