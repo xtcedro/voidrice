@@ -34,9 +34,21 @@ whiptail --msgbox "Editing SSH configuration for security. Press Enter, modify a
 nano /etc/ssh/sshd_config
 systemctl restart ssh
 
-# Enable & Start Essential Services
-whiptail --msgbox "Enabling and starting essential services (Nginx, Fail2Ban)..." 10 60
-systemctl enable --now nginx fail2ban
+# Prompt user for domain name
+DOMAIN=$(whiptail --inputbox "Enter your domain name (e.g., example.com):" 10 60 3>&1 1>&2 2>&3)
+
+# Check if domain was entered
+if [ -z "$DOMAIN" ]; then
+    whiptail --msgbox "No domain entered. SSL certificate setup skipped." 10 60
+else
+    # Run Certbot with the provided domain
+    certbot --nginx -d "www.$DOMAIN" -d "$DOMAIN"
+
+    # Notify user of completion
+    whiptail --msgbox "SSL certificate setup completed for $DOMAIN and www.$DOMAIN!" 10 60
+fi
+
+
 
 # Prompt user for GitHub details
 GITHUB_USERNAME=$(whiptail --inputbox "Enter your GitHub username:" 10 60 3>&1 1>&2 2>&3)
@@ -128,6 +140,10 @@ chmod 600 /var/www/backend/.env
 
 # Restart PM2 to apply changes
 pm2 restart "$APP_NAME"
+
+# Enable & Start Essential Services
+whiptail --msgbox "Enabling and starting essential services (Nginx, Fail2Ban)..." 10 60
+systemctl enable --now nginx fail2ban
 
 # Final Success Message
 whiptail --msgbox "Setup completed successfully! 🚀 Your server is now fully configured with MariaDB, Node.js, PM2, and security enhancements." 10 60
