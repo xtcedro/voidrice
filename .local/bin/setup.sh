@@ -137,6 +137,74 @@ DB_PASS=$DB_PASS
 DB_NAME=$DB_NAME
 EOF
 
+cat <<EOF > /etc/nginx/sites-available/$DOMAIN
+# Default server configuration - Redirect HTTP to HTTPS
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    return 301 https://$host$request_uri;
+}
+
+# HTTPS server block for your domain
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+
+    # Domain names
+    server_name www.$DOMAIN $DOMAIN;
+
+    # SSL Certificates (managed by Certbot)
+    ssl_certificate /etc/letsencrypt/live/$DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/$DOMAIN/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    # Security Headers
+    add_header X-Frame-Options SAMEORIGIN;
+    add_header X-Content-Type-Options nosniff;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    # Increase request body size
+    client_max_body_size 10M;
+
+    # Reverse Proxy to Node.js
+    location / {
+        proxy_pass http://127.0.0.1:3000; # Replace with your Node.js server address
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    # Health Check
+    location /health {
+        proxy_pass http://127.0.0.1:3000/health; # Replace with your health check endpoint
+    }
+
+    # Static files
+    location /static/ {
+        root /var/www/html;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Logging
+    error_log /var/log/nginx/domtech_error.log;
+    access_log /var/log/nginx/domtech_access.log;
+}
+
+# Redirect www and non-www to HTTPS
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name www.$DOMAIN $DOMAIN;
+    return 301 https://$host$request_uri;
+}
+EOF
+
 chown $(whoami):$(whoami) /var/www/backend/.env
 chmod 600 /var/www/backend/.env
 
