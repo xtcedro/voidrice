@@ -14,8 +14,7 @@ export BACK="/var/www/backend"
 
 export TMP="/tmp"
 
-# Git Directory
-export GIT="/tmp/Etc"
+
 
 # Root Directory for Dominguez Tech Solutions
 export ROOT="/var/www/html"
