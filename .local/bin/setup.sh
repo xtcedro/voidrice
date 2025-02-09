@@ -6,6 +6,12 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
+# Prompt user to set a new password
+whiptail --msgbox "You will now set a password for your user account." 10 60
+
+# Run passwd command to change the user's password
+passwd $USER
+
 # System Update & Package Installation
 whiptail --msgbox "Updating system and installing necessary packages..." 10 60
 apt update && apt upgrade -y
