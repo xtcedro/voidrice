@@ -32,12 +32,7 @@ systemctl restart ssh
 whiptail --msgbox "Enabling and starting essential services (Nginx, Fail2Ban)..." 10 60
 systemctl enable --now nginx fail2ban
 
-# GitHub SSH Key Setup
-whiptail --msgbox "Generating SSH Key for GitHub access..." 10 60
-ssh-keygen -t ed25519 -C "$(whiptail --inputbox "Enter your GitHub email:" 10 60 3>&1 1>&2 2>&3)"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-whiptail --msgbox "Copy your SSH key and add it to GitHub: $(cat ~/.ssh/id_ed25519.pub)" 15 80
+
 
 # Clone NodeLite Backend & Setup PM2
 whiptail --msgbox "Setting up Node.js backend..." 10 60
