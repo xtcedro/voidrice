@@ -205,6 +205,8 @@ server {
 }
 EOF
 
+nginx -t
+
 chown $(whoami):$(whoami) /var/www/backend/.env
 chmod 600 /var/www/backend/.env
 
