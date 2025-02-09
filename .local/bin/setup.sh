@@ -32,7 +32,28 @@ systemctl restart ssh
 whiptail --msgbox "Enabling and starting essential services (Nginx, Fail2Ban)..." 10 60
 systemctl enable --now nginx fail2ban
 
+# Prompt user for GitHub details
+GITHUB_USERNAME=$(whiptail --inputbox "Enter your GitHub username:" 10 60 3>&1 1>&2 2>&3)
+GITHUB_EMAIL=$(whiptail --inputbox "Enter your GitHub email:" 10 60 3>&1 1>&2 2>&3)
 
+# Confirm details before proceeding
+whiptail --yesno "You entered:\n\nUsername: $GITHUB_USERNAME\nEmail: $GITHUB_EMAIL\n\nProceed with SSH key generation?" 12 60
+if [ $? -ne 0 ]; then
+    whiptail --msgbox "Operation canceled!" 10 40
+    exit 1
+fi
+
+# Generate SSH Key
+whiptail --msgbox "Generating SSH Key for GitHub access..." 10 60
+ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"
+
+# Start the SSH agent and add the key
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+# Display public SSH key for GitHub setup
+SSH_KEY=$(cat ~/.ssh/id_ed25519.pub)
+whiptail --msgbox "Copy your SSH key and add it to GitHub:\n\n$SSH_KEY\n\nGo to GitHub > Settings > SSH and GPG keys > New SSH Key." 15 80
 
 # Clone NodeLite Backend & Setup PM2
 whiptail --msgbox "Setting up Node.js backend..." 10 60
@@ -51,9 +72,7 @@ chsh -s /bin/zsh
 git clone https://github.com/xtcedro/voidrice.git ~/voidrice
 whiptail --msgbox "Voidrice has been cloned. You may need to manually apply configurations." 10 60
 
-# Run Certbot & Dry Run (No Whiptail for Certbot)
-certbot --nginx
-certbot renew --dry-run
+
 
 # Set up auto-renewal of SSL certificates
 echo "0 0 * * * certbot renew --quiet" | crontab -
