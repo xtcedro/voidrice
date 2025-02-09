@@ -15,7 +15,9 @@ passwd $USER
 # System Update & Package Installation
 whiptail --msgbox "Updating system and installing necessary packages..." 10 60
 apt update && apt upgrade -y
-apt install -y git nodejs npm neovim ufw fail2ban mariadb-server nginx certbot python3-certbot-nginx zsh neofetch 
+apt install -y git nodejs npm neovim ufw fail2ban mariadb-server nginx certbot python3-certbot-nginx zsh neofetch unattended-upgrades
+
+dpkg-reconfigure --priority=low unattended-upgrades
 
 # Configure Firewall (UFW)
 whiptail --msgbox "Configuring firewall rules..." 10 60
