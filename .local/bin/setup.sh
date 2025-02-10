@@ -50,6 +50,27 @@ else
     whiptail --msgbox "SSL certificate setup completed for $DOMAIN and www.$DOMAIN!" 10 60
 fi
 
+
+# Prompt user for GitHub details
+GITHUB_USERNAME=$(whiptail --inputbox "Enter your GitHub username:" 10 60 3>&1 1>&2 2>&3)
+GITHUB_EMAIL=$(whiptail --inputbox "Enter your GitHub email:" 10 60 3>&1 1>&2 2>&3)
+
+# Confirm details before proceeding
+whiptail --yesno "You entered:\n\nUsername: $GITHUB_USERNAME\nEmail: $GITHUB_EMAIL\n\nProceed with Git configuration?" 12 60
+if [ $? -ne 0 ]; then
+    whiptail --msgbox "Git configuration skipped!" 10 40
+else
+    # Configure Git global settings
+    git config --global user.name "$GITHUB_USERNAME"
+    git config --global user.email "$GITHUB_EMAIL"
+
+    # Enable color output and default to main branch
+    git config --global color.ui auto
+    git config --global init.defaultBranch main
+
+    whiptail --msgbox "Git has been configured with:\n\nUsername: $GITHUB_USERNAME\nEmail: $GITHUB_EMAIL\n\nYou're all set!" 12 60
+fi
+
 # Generate SSH Key
 whiptail --msgbox "Generating SSH Key for GitHub access..." 10 60
 ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"
