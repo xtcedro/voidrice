@@ -50,19 +50,6 @@ else
     whiptail --msgbox "SSL certificate setup completed for $DOMAIN and www.$DOMAIN!" 10 60
 fi
 
-
-
-# Prompt user for GitHub details
-GITHUB_USERNAME=$(whiptail --inputbox "Enter your GitHub username:" 10 60 3>&1 1>&2 2>&3)
-GITHUB_EMAIL=$(whiptail --inputbox "Enter your GitHub email:" 10 60 3>&1 1>&2 2>&3)
-
-# Confirm details before proceeding
-whiptail --yesno "You entered:\n\nUsername: $GITHUB_USERNAME\nEmail: $GITHUB_EMAIL\n\nProceed with SSH key generation?" 12 60
-if [ $? -ne 0 ]; then
-    whiptail --msgbox "Operation canceled!" 10 40
-    exit 1
-fi
-
 # Generate SSH Key
 whiptail --msgbox "Generating SSH Key for GitHub access..." 10 60
 ssh-keygen -t ed25519 -C "$GITHUB_EMAIL"
