@@ -79,6 +79,7 @@ whiptail --msgbox "Copy your SSH key and add it to GitHub:\n\n$SSH_KEY\n\nGo to 
 whiptail --msgbox "Setting up Node.js backend..." 10 60
 mkdir -p /var/www/backend && cd /var/www/backend
 git clone https://github.com/xtcedro/NodeLite.git .
+cp NodeLite/* .
 npm install
 
 APP_NAME=$(whiptail --inputbox "Enter a name for your Node.js app in PM2:" 10 60 3>&1 1>&2 2>&3)
