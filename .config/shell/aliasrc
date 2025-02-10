@@ -42,6 +42,7 @@ alias \
     ga="git add ." \
     gc="git commit -m" \
     gp="git push origin" \
+    gl="git pull" \
     gm="git merge"
 
 # SSH with hardcoded IPs
