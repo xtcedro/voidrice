@@ -88,9 +88,14 @@ whiptail --msgbox "Setting up Node.js backend..." 10 60
 mkdir -p /var/www/backend && cd /var/www/backend
 git clone https://github.com/xtcedro/NodeLite.git .
 cp -r NodeLite/* .
-rm -rf NodeLite
 npm install -g pm2@latest
 npm install
+
+whiptail --msgbox "Setting up NGINX configuration..." 10 60
+cp -r NodeLite/nginx/nginx.conf /etc/nginx/sites-available/$DOMAIN
+
+whiptail --msgbox "Please replace each instance of 'example.com' with your actual domain" 10 60
+nano /etc/nginx/sites-available/$DOMAIN
 
 APP_NAME=$(whiptail --inputbox "Enter a name for your Node.js app in PM2:" 10 60 3>&1 1>&2 2>&3)
 pm2 start server.js --name "$APP_NAME"
