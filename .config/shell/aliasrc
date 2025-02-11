@@ -112,7 +112,8 @@ nsupdate() {
 	cp -r NodeLite/* /var/www/backend/ && \
 	rm -rf /var/www/backend/nginx && \
 	rm -rf /var/www/backend/public && \
-	rm -rf NodeLite/ && ba && npm install \
+	rm -rf NodeLite/ && ba && npm install && \
+	pm2 restart 0 \
 }
 
 gameupdate() {
