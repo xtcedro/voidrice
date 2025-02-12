@@ -72,6 +72,7 @@ alias \
     reme="clone_repo remodeling-company" \
     roof="clone_repo roofing-company" \
     ndjs="clone_repo NodeLite" \
+    hops="clone_repo hops" \
 
 # Update commands
 dtsupdate() {
@@ -105,6 +106,14 @@ ccupdate() {
     rm -rf $ROOT/public/pages/ && \
     rm -rf crashcourse && cd
 }
+
+hopupdate() {
+	rm -rf $ROOT/public/* && \
+	cd $TMP && clone_repo hops && \
+	cp -r hops/* $ROOT/public/ && \
+	rm -rf hops && cd \
+}
+
 
 nsupdate() {
 	rm -rf /var/www/backend/* && \
