@@ -104,6 +104,7 @@ ccupdate() {
     cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
     cp $ROOT/public/pages/crashcourse/* $ROOT/public/ && \
     cp $ROOT/public/pages/hops/* $ROOT/public/ && \
+    cp $ROOT/public/pages/support/* $ROOT/public/ && \
 	mkdir -p $ROOT/public/assets/videos/ && \
 	cp ~/Videos/* $ROOT/public/assets/videos/ && \
     rm -rf $ROOT/public/pages/ && \
