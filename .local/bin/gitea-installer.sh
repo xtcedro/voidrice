@@ -1,3 +1,10 @@
-distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
-   && curl -fsSL https://dl.gitea.io/gitea/gpg.key | sudo tee /usr/share/keyrings/gitea-archive-keyring.gpg >/dev/null \
-   && echo "deb [signed-by=/usr/share/keyrings/gitea-archive-keyring.gpg] https://dl.gitea.io/gitea $distribution main" | sudo tee /etc/apt/sources.list.d/gitea.list
+sudo adduser --system --group --disabled-password --home /var/lib/gitea git
+
+export GITEA_VERSION="1.20.3"
+sudo -u git wget -O /var/lib/gitea/gitea https://dl.gitea.com/gitea/${GITEA_VERSION}/gitea-${GITEA_VERSION}-linux-amd64
+sudo chmod +x /var/lib/gitea/gitea
+
+
+sudo mkdir -p /var/lib/gitea/{custom,data,log}
+sudo chown -R git:git /var/lib/gitea
+sudo chmod -R 750 /var/lib/gitea
