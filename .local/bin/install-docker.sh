@@ -16,25 +16,29 @@ show_progress() {
     } | whiptail --gauge "$1" 10 50 0
 }
 
-# Update system
+# Update system packages
 show_progress "Updating system packages..."
 apt update && apt upgrade -y
 
-# Install dependencies
+# Install required dependencies
 show_progress "Installing dependencies..."
 apt install -y ca-certificates curl gnupg lsb-release
 
-# Add Docker’s GPG Key
+# Remove any old Docker repository (fix for unsigned repo error)
+show_progress "Removing old Docker repository (if exists)..."
+rm -f /etc/apt/sources.list.d/docker.list
+
+# Add Docker’s GPG Key securely
 show_progress "Adding Docker's GPG Key..."
 mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | tee /etc/apt/keyrings/docker.gpg > /dev/null
 chmod a+r /etc/apt/keyrings/docker.gpg
 
-# Add Docker repository
+# Add the correct Docker repository with signed-by
 show_progress "Adding Docker repository..."
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# Update package index
+# Update package index again
 show_progress "Updating package index..."
 apt update
 
@@ -47,7 +51,7 @@ show_progress "Starting and enabling Docker..."
 systemctl start docker
 systemctl enable docker
 
-# Verify installation
+# Verify Docker installation
 docker --version &> /dev/null
 if [ $? -eq 0 ]; then
     whiptail --title "Installation Complete" --msgbox "Docker has been successfully installed!" 10 50
