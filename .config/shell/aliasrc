@@ -91,6 +91,36 @@ dtsupdate() {
     rm -rf DominguezTS && cd
 }
 
+ohkupdate() {
+    cd $TMP && clone_repo open-heart-kollective && \
+    rm -rf $ROOT/public/* && cp -r open-heart-kollective/public/* $ROOT/public/ && \
+    cp $ROOT/public/pages/home/* $ROOT/public/  && \
+    cp $ROOT/public/pages/membership/* $ROOT/public/ && \
+    rm -rf $ROOT/public/pages/ && \
+    rm -rf open-heart-kollective && cd
+}
+
+
+ccupdate() {
+    cd $TMP && clone_repo crashcourse && \
+    rm -rf $ROOT/public/* && cp -r crashcourse/public/* $ROOT/public/ && \
+    cp $ROOT/public/pages/home/* $ROOT/public/  && \
+    cp $ROOT/public/pages/legal/* $ROOT/public/  && \
+    cp $ROOT/public/pages/about/* $ROOT/public/  && \
+    cp $ROOT/public/pages/services/* $ROOT/public/  && \
+    cp $ROOT/public/pages/contact/* $ROOT/public/  && \
+    cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
+    cp $ROOT/public/pages/prices/* $ROOT/public/ && \
+    cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
+    cp $ROOT/public/pages/crashcourse/* $ROOT/public/ && \
+    cp $ROOT/public/pages/hops/* $ROOT/public/ && \
+    cp $ROOT/public/pages/support/* $ROOT/public/ && \
+	mkdir -p $ROOT/public/assets/videos/ && \
+	cp ~/Videos/* $ROOT/public/assets/videos/ && \
+    rm -rf $ROOT/public/pages/ && \
+    rm -rf crashcourse && cd
+}
+
 ccupdate() {
     cd $TMP && clone_repo crashcourse && \
     rm -rf $ROOT/public/* && cp -r crashcourse/public/* $ROOT/public/ && \
