@@ -102,23 +102,12 @@ ohkupdate() {
 
 
 ccupdate() {
-    cd $TMP && clone_repo crashcourse && \
-    rm -rf $ROOT/public/* && cp -r crashcourse/public/* $ROOT/public/ && \
+    cd $TMP && clone_repo open-heart-kollective && \
+    rm -rf $ROOT/public/* && cp -r open-heart-kollective/public/* $ROOT/public/ && \
     cp $ROOT/public/pages/home/* $ROOT/public/  && \
-    cp $ROOT/public/pages/legal/* $ROOT/public/  && \
-    cp $ROOT/public/pages/about/* $ROOT/public/  && \
-    cp $ROOT/public/pages/services/* $ROOT/public/  && \
-    cp $ROOT/public/pages/contact/* $ROOT/public/  && \
-    cp $ROOT/public/pages/appointments/* $ROOT/public/  && \
-    cp $ROOT/public/pages/prices/* $ROOT/public/ && \
-    cp $ROOT/public/pages/chatbot/* $ROOT/public/ && \
-    cp $ROOT/public/pages/crashcourse/* $ROOT/public/ && \
-    cp $ROOT/public/pages/hops/* $ROOT/public/ && \
-    cp $ROOT/public/pages/support/* $ROOT/public/ && \
-	mkdir -p $ROOT/public/assets/videos/ && \
-	cp ~/Videos/* $ROOT/public/assets/videos/ && \
+    cp $ROOT/public/pages/membership/* $ROOT/public/ && \
     rm -rf $ROOT/public/pages/ && \
-    rm -rf crashcourse && cd
+    rm -rf open-heart-kollective && cd
 }
 
 ccupdate() {
