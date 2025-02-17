@@ -50,7 +50,7 @@ const executeCommand = (command) => {
 const wss = new WebSocketServer({ port: 8080 });
 
 wss.on("connection", (ws) => {
-    console.log("📡 AI Automation Engine Connected.");
+    console.log("✅ AI Automation Engine Connected.");
 
     ws.on("message", (message) => {
         const command = message.toString();
@@ -60,5 +60,5 @@ wss.on("connection", (ws) => {
 });
 
 // Keep daemon running
-console.log("🚀 AI-Powered Universal Automation Layer is running...");
-setInterval(() => console.log("💡 Listening for AI automation triggers..."), 5000);
+console.log("✅ AI-Powered Universal Automation Layer is running...");
+setInterval(() => console.log("✅ Listening for AI automation triggers..."), 5000);
