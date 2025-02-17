@@ -3,79 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Automation Control</title>
+    <title>AI Automation WebSocket Client</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        select, button {
-            font-size: 16px;
-            padding: 10px;
-            margin: 10px;
-        }
-        #log {
-            width: 80%;
-            margin: 20px auto;
-            height: 300px;
-            overflow-y: scroll;
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: left;
-            background: #f9f9f9;
-        }
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        select, button { margin: 10px; padding: 10px; font-size: 16px; }
+        #output { margin-top: 20px; padding: 10px; border: 1px solid #ccc; height: 200px; overflow-y: auto; }
     </style>
 </head>
 <body>
 
-    <h1>AI Automation Engine</h1>
+    <h1>AI Automation WebSocket Client</h1>
+    <p>Select a command from the dropdown and send it to the AI Automation Engine.</p>
 
-    <label for="command">Select a Command:</label>
-    <select id="command">
-        <option value="clear-cache">Clear Cache</option>
+    <select id="commandSelect">
         <option value="update-system">Update System</option>
-        <option value="optimize-system">Optimize System</option>
-        <option value="deploy-app">Deploy App</option>
-        <option value="restart-services">Restart Services</option>
+        <option value="restart-service">Restart Service</option>
+        <option value="clear-cache">Clear Cache</option>
+        <option value="fetch-status">Fetch Status</option>
+        <option value="shutdown">Shutdown System</option>
     </select>
+    
+    <button onclick="sendCommand()">Send Command</button>
+    <button onclick="disconnectWebSocket()">Disconnect</button>
 
-    <button onclick="sendCommand()">Execute Command</button>
-
-    <h2>Execution Log</h2>
-    <div id="log"></div>
+    <div id="output"></div>
 
     <script>
-        const ws = new WebSocket("wss://okdevs.xyz:8080");
+        let ws;
 
-        ws.onopen = () => {
-            logMessage("✅ Connected to AI Automation Engine.");
-        };
+        function connectWebSocket() {
+            ws = new WebSocket("ws://localhost:8080");
 
-        ws.onmessage = (event) => {
-            logMessage(`✅ Server Response: ${event.data}`);
-        };
+            ws.onopen = () => {
+                logMessage("📡 Connected to AI Automation Engine.");
+            };
 
-        ws.onclose = () => {
-            logMessage("❌ Disconnected from AI Automation Engine.");
-        };
+            ws.onmessage = (event) => {
+                logMessage("💡 Server Response: " + event.data);
+            };
+
+            ws.onerror = (error) => {
+                logMessage("❌ WebSocket Error: " + error.message);
+            };
+
+            ws.onclose = () => {
+                logMessage("🔌 Disconnected from AI Automation Engine.");
+            };
+        }
 
         function sendCommand() {
-            const command = document.getElementById("command").value;
-            logMessage(`🚀 Sending command: ${command}`);
+            if (!ws || ws.readyState !== WebSocket.OPEN) {
+                logMessage("⚠️ WebSocket is not connected. Reconnecting...");
+                connectWebSocket();
+                setTimeout(sendCommand, 1000);
+                return;
+            }
+
+            const command = document.getElementById("commandSelect").value;
             ws.send(command);
+            logMessage("🚀 Sent: " + command);
+        }
+
+        function disconnectWebSocket() {
+            if (ws) {
+                ws.close();
+            }
         }
 
         function logMessage(message) {
-            const logDiv = document.getElementById("log");
+            const output = document.getElementById("output");
             const newMessage = document.createElement("p");
             newMessage.textContent = message;
-            logDiv.appendChild(newMessage);
-            logDiv.scrollTop = logDiv.scrollHeight;
+            output.appendChild(newMessage);
+            output.scrollTop = output.scrollHeight;
         }
+
+        // Auto-connect on page load
+        window.onload = connectWebSocket;
     </script>
 
 </body>
