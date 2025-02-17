@@ -32,7 +32,7 @@
         let ws;
 
         function connectWebSocket() {
-            ws = new WebSocket("ws://localhost:8080");
+            ws = new WebSocket("wss://localhost:8080");
 
             ws.onopen = () => {
                 logMessage("📡 Connected to AI Automation Engine.");
