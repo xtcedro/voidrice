@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        select, button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #log {
+            width: 80%;
+            margin: 20px auto;
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI Automation Engine</h1>
+
+    <label for="command">Select a Command:</label>
+    <select id="command">
+        <option value="clear-cache">Clear Cache</option>
+        <option value="update-system">Update System</option>
+        <option value="optimize-system">Optimize System</option>
+        <option value="deploy-app">Deploy App</option>
+        <option value="restart-services">Restart Services</option>
+    </select>
+
+    <button onclick="sendCommand()">Execute Command</button>
+
+    <h2>Execution Log</h2>
+    <div id="log"></div>
+
+    <script>
+        const ws = new WebSocket("ws://localhost:8080");
+
+        ws.onopen = () => {
+            logMessage("✅ Connected to AI Automation Engine.");
+        };
+
+        ws.onmessage = (event) => {
+            logMessage(`🔹 Response: ${event.data}`);
+        };
+
+        ws.onclose = () => {
+            logMessage("❌ Disconnected from AI Automation Engine.");
+        };
+
+        function sendCommand() {
+            const command = document.getElementById("command").value;
+            logMessage(`🚀 Sending command: ${command}`);
+            ws.send(command);
+        }
+
+        function logMessage(message) {
+            const logDiv = document.getElementById("log");
+            const newMessage = document.createElement("p");
+            newMessage.textContent = message;
+            logDiv.appendChild(newMessage);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+    </script>
+
+</body>
+</html>
