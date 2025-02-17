@@ -49,14 +49,14 @@
     <div id="log"></div>
 
     <script>
-        const ws = new WebSocket("ws://localhost:8080");
+        const ws = new WebSocket("wss://okdevs.xyz:8080");
 
         ws.onopen = () => {
             logMessage("✅ Connected to AI Automation Engine.");
         };
 
         ws.onmessage = (event) => {
-            logMessage(`🔹 Response: ${event.data}`);
+            logMessage(`✅ Server Response: ${event.data}`);
         };
 
         ws.onclose = () => {
