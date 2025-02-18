@@ -188,6 +188,14 @@ okdupdate() {
 	rm -rf okdevs && cd
 }
 
+hrupdate() {
+	cd $TMP && clone_repo hrc && \
+	rm -rf $ROOT/public/* && cp -r hrc/public/* && \
+	cp $ROOT/public/pages/home/* $ROOT/public && \
+	rm -rf hrc && cd && \
+    rm -rf $ROOT/public/pages \
+}
+
 hrcupdate() {
     cd $TMP && clone_repo roofing-company && \
     rm -rf $ROOT/public/* && cp -r roofing-company/public/* $ROOT/public/ && \
