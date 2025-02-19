@@ -1,88 +1,48 @@
-const fs = require("fs"); const path = require("path"); const express = require("express");
+const fs = require('fs'); const { execSync } = require('child_process');
 
-// Project root directory const projectRoot = path.join(__dirname, "landing-page");
+// Function to create directories function createDir(path) { if (!fs.existsSync(path)) { fs.mkdirSync(path, { recursive: true }); console.log(Created directory: ${path}); } }
 
-// Folder structure const folders = [ "public", "src", "src/components" ];
+// Function to write files function createFile(path, content) { fs.writeFileSync(path, content); console.log(Created file: ${path}); }
 
-// Files and their contents const files = { "public/index.html": `<!DOCTYPE html>
+// Set up main project folder and subdirectories const projectName = "my_fullstack_app"; createDir(projectName); createDir(${projectName}/frontend); createDir(${projectName}/backend);
 
-<html lang="en">
+// Initialize package.json for frontend and backend execSync(cd ${projectName}/frontend && npm init -y, { stdio: 'inherit' }); execSync(cd ${projectName}/backend && npm init -y, { stdio: 'inherit' });
+
+// Install dependencies console.log("Installing frontend dependencies..."); execSync(cd ${projectName}/frontend && npm install react react-dom react-router-dom, { stdio: 'inherit' }); execSync(cd ${projectName}/frontend && npm install --save-dev vite, { stdio: 'inherit' });
+
+console.log("Installing backend dependencies..."); execSync(cd ${projectName}/backend && npm install express cors dotenv, { stdio: 'inherit' });
+
+// Create frontend files createFile(${projectName}/frontend/index.html, `
+
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>React App</title>
 </head>
 <body>
     <div id="root"></div>
-    <script src="../src/index.js"></script>
+    <script type="module" src="/src/index.js"></script>
 </body>
-</html>`,"src/index.js": `import React from 'react'; import ReactDOM from 'react-dom/client'; import App from './App'; import './styles.css';
+</html>`);createDir(${projectName}/frontend/src); createFile(${projectName}/frontend/src/index.js, ` import React from 'react'; import ReactDOM from 'react-dom/client'; import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<App />); `,
+const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<App />); `);
 
-"src/App.js": `import React from 'react'; import Header from './components/Header'; import HeroSection from './components/HeroSection'; import Footer from './components/Footer';
+createFile(${projectName}/frontend/src/App.js, ` import React from 'react';
 
-function App() { return ( <div> <Header /> <HeroSection /> <Footer /> </div> ); }
+function App() { return ( <div> <h1>Welcome to My React App</h1> </div> ); }
 
-export default App; `,
+export default App; `);
 
-"src/components/Header.js": `import React from 'react';
+// Create backend files createFile(${projectName}/backend/index.js, ` const express = require('express'); const cors = require('cors'); const dotenv = require('dotenv');
 
-function Header() { return ( <header> <h1>Welcome to Our Landing Page</h1> </header> ); }
+dotenv.config(); const app = express(); const PORT = process.env.PORT || 5000;
 
-export default Header; `,
+app.use(cors()); app.use(express.json());
 
-"src/components/HeroSection.js": `import React from 'react';
+app.get('/', (req, res) => { res.send('Hello from Express backend!'); });
 
-function HeroSection() { return ( <section> <h2>Your Business Solution</h2> <p>We provide the best services to boost your business.</p> <button>Get Started</button> </section> ); }
+app.listen(PORT, () => { console.log(`Server running on http://localhost:${PORT}`); }); `);
 
-export default HeroSection; `,
-
-"src/components/Footer.js": `import React from 'react';
-
-function Footer() { return ( <footer> <p>© 2025 Your Company. All Rights Reserved.</p> </footer> ); }
-
-export default Footer; `,
-
-"src/styles.css": `body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #f4f4f4; }
-
-header, footer { background: #333; color: white; padding: 1rem; }
-
-section { margin: 2rem; padding: 2rem; background: white; border-radius: 5px; } `,
-
-"package.json": JSON.stringify({ "name": "landing-page", "version": "1.0.0", "description": "A simple React landing page", "main": "server.js", "scripts": { "start": "node server.js", "build": "react-scripts build" }, "dependencies": { "express": "^4.17.1", "react": "^18.0.0", "react-dom": "^18.0.0", "react-scripts": "^5.0.0" } }, null, 2),
-
-"server.js": `const express = require('express'); const path = require('path'); const fs = require('fs');
-
-const app = express(); const PORT = process.env.PORT || 3000;
-
-// Ensure the build folder exists const buildPath = path.join(__dirname, 'build'); if (!fs.existsSync(buildPath)) { console.error("❌ Build folder missing! Run npm run build first."); process.exit(1); }
-
-// Serve static files from the React app's build directory app.use(express.static(buildPath));
-
-// Serve index.html for all unknown routes (Single Page Application behavior) app.get('*', (req, res) => { res.sendFile(path.join(buildPath, 'index.html')); });
-
-app.listen(PORT, () => { console.log(✅ Server is running on http://localhost:${PORT}); }); `,
-
-"README.md": `# Landing Page
-
-This is a simple React landing page.
-
-Setup
-
-1. Install dependencies: ``` npm install ```
-
-
-2. Build the React app: ``` npm run build ```
-
-
-3. Start the server: ``` npm start ``` ` };
-
-
-
-// Create folders folders.forEach(folder => { fs.mkdirSync(path.join(projectRoot, folder), { recursive: true }); });
-
-// Create files Object.entries(files).forEach(([filename, content]) => { fs.writeFileSync(path.join(projectRoot, filename), content); });
-
-console.log("✅ React landing page setup complete! Run cd landing-page && npm install to continue.");
+console.log("Setup completed! Run 'cd my_fullstack_app/frontend && npm run dev' to start the React app.");
 
