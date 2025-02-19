@@ -16,9 +16,9 @@ const fs = require("fs"); const path = require("path"); const express = require(
     <div id="root"></div>
     <script src="../src/index.js"></script>
 </body>
-</html>`,"src/index.js": `import React from 'react'; import ReactDOM from 'react-dom'; import App from './App'; import './styles.css';
+</html>`,"src/index.js": `import React from 'react'; import ReactDOM from 'react-dom/client'; import App from './App'; import './styles.css';
 
-ReactDOM.render(<App />, document.getElementById('root')); `,
+const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<App />); `,
 
 "src/App.js": `import React from 'react'; import Header from './components/Header'; import HeroSection from './components/HeroSection'; import Footer from './components/Footer';
 
@@ -50,17 +50,19 @@ header, footer { background: #333; color: white; padding: 1rem; }
 
 section { margin: 2rem; padding: 2rem; background: white; border-radius: 5px; } `,
 
-"package.json": { "name": "landing-page", "version": "1.0.0", "description": "A simple React landing page", "main": "server.js", "scripts": { "start": "node server.js", "build": "react-scripts build" }, "dependencies": { "express": "^4.17.1", "react": "^18.0.0", "react-dom": "^18.0.0", "react-scripts": "^5.0.0" } },
+"package.json": JSON.stringify({ "name": "landing-page", "version": "1.0.0", "description": "A simple React landing page", "main": "server.js", "scripts": { "start": "node server.js", "build": "react-scripts build" }, "dependencies": { "express": "^4.17.1", "react": "^18.0.0", "react-dom": "^18.0.0", "react-scripts": "^5.0.0" } }, null, 2),
 
-"server.js": `const express = require('express'); const path = require('path');
+"server.js": `const express = require('express'); const path = require('path'); const fs = require('fs');
 
 const app = express(); const PORT = process.env.PORT || 3000;
 
-// Serve static files from the React app's build directory app.use(express.static(path.join(__dirname, 'build')));
+// Ensure the build folder exists const buildPath = path.join(__dirname, 'build'); if (!fs.existsSync(buildPath)) { console.error("❌ Build folder missing! Run npm run build first."); process.exit(1); }
 
-// Serve index.html for all unknown routes (Single Page Application behavior) app.get('*', (req, res) => { res.sendFile(path.join(__dirname, 'build', 'index.html')); });
+// Serve static files from the React app's build directory app.use(express.static(buildPath));
 
-app.listen(PORT, () => { console.log(`Server is running on http://localhost:${PORT}`); }); `,
+// Serve index.html for all unknown routes (Single Page Application behavior) app.get('*', (req, res) => { res.sendFile(path.join(buildPath, 'index.html')); });
+
+app.listen(PORT, () => { console.log(✅ Server is running on http://localhost:${PORT}); }); `,
 
 "README.md": `# Landing Page
 
@@ -82,5 +84,5 @@ Setup
 
 // Create files Object.entries(files).forEach(([filename, content]) => { fs.writeFileSync(path.join(projectRoot, filename), content); });
 
-console.log("React landing page setup complete!");
+console.log("✅ React landing page setup complete! Run cd landing-page && npm install to continue.");
 
