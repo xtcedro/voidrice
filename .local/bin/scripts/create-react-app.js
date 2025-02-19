@@ -6,15 +6,19 @@ function createDir(path) { if (!fs.existsSync(path)) { fs.mkdirSync(path, { recu
 // Function to write files 
 function createFile(path, content) { fs.writeFileSync(path, content); console.log(Created file: ${path}); }
 
-// Set up main project folder and subdirectories const projectName = "my_fullstack_app"; createDir(projectName); createDir(${projectName}/frontend); createDir(${projectName}/backend);
+// Set up main project folder and subdirectories
+ const projectName = "my_fullstack_app"; createDir(projectName); createDir(${projectName}/frontend); createDir(${projectName}/backend);
 
-// Initialize package.json for frontend and backend execSync(cd ${projectName}/frontend && npm init -y, { stdio: 'inherit' }); execSync(cd ${projectName}/backend && npm init -y, { stdio: 'inherit' });
+// Initialize package.json for frontend and backend 
+execSync(cd ${projectName}/frontend && npm init -y, { stdio: 'inherit' }); execSync(cd ${projectName}/backend && npm init -y, { stdio: 'inherit' });
 
-// Install dependencies console.log("Installing frontend dependencies..."); execSync(cd ${projectName}/frontend && npm install react react-dom react-router-dom, { stdio: 'inherit' }); execSync(cd ${projectName}/frontend && npm install --save-dev vite, { stdio: 'inherit' });
+// Install dependencies 
+console.log("Installing frontend dependencies..."); execSync(cd ${projectName}/frontend && npm install react react-dom react-router-dom, { stdio: 'inherit' }); execSync(cd ${projectName}/frontend && npm install --save-dev vite, { stdio: 'inherit' });
 
 console.log("Installing backend dependencies..."); execSync(cd ${projectName}/backend && npm install express cors dotenv, { stdio: 'inherit' });
 
-// Create frontend files createFile(${projectName}/frontend/index.html, `
+// Create frontend files 
+createFile(${projectName}/frontend/index.html, `
 
 <!DOCTYPE html><html lang="en">
 <head>
