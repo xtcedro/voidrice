@@ -1,8 +1,10 @@
 const fs = require('fs'); const { execSync } = require('child_process');
 
-// Function to create directories function createDir(path) { if (!fs.existsSync(path)) { fs.mkdirSync(path, { recursive: true }); console.log(Created directory: ${path}); } }
+// Function to create directories 
+function createDir(path) { if (!fs.existsSync(path)) { fs.mkdirSync(path, { recursive: true }); console.log(Created directory: ${path}); } }
 
-// Function to write files function createFile(path, content) { fs.writeFileSync(path, content); console.log(Created file: ${path}); }
+// Function to write files 
+function createFile(path, content) { fs.writeFileSync(path, content); console.log(Created file: ${path}); }
 
 // Set up main project folder and subdirectories const projectName = "my_fullstack_app"; createDir(projectName); createDir(${projectName}/frontend); createDir(${projectName}/backend);
 
