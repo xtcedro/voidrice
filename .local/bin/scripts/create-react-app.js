@@ -30,7 +30,9 @@ createFile(${projectName}/frontend/index.html, `
     <div id="root"></div>
     <script type="module" src="/src/index.js"></script>
 </body>
-</html>`);createDir(${projectName}/frontend/src); createFile(${projectName}/frontend/src/index.js, ` import React from 'react'; import ReactDOM from 'react-dom/client'; import App from './App';
+</html>`);
+
+createDir(${projectName}/frontend/src); createFile(${projectName}/frontend/src/index.js, ` import React from 'react'; import ReactDOM from 'react-dom/client'; import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root')); root.render(<App />); `);
 
