@@ -1,0 +1,2 @@
+alias main=ssh -i keys/efficient.pem admin@3.149.233.245
+alias efm=ssh -i keys/efficient.pem admin@18.227.140.25
