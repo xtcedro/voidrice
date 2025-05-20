@@ -229,3 +229,4 @@ se() {
 # Help command to list custom aliases
 alias help="alias | grep -E 'git|ssh|update|yt|killall'"
 alias deploy="gl && ga && gc 'update' && gp main"
+alias start="deno --allow-net --allow-read --allow-env"
