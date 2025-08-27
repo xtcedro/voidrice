@@ -170,3 +170,25 @@ let g:neoformat_enabled_css = ['prettier']
 
 " Auto-format on save for CSS files
 autocmd BufWritePre *.css Neoformat
+
+" Mapping to visually highlight until the next </style> tag
+nnoremap <leader>s :call HighlightToStyleEnd()<CR>
+vnoremap <leader>s :<C-u>call HighlightToStyleEnd()<CR>
+
+function! HighlightToStyleEnd() abort
+    " Save the current position
+    let save_pos = getpos('.')
+
+    " Search for the next </style> tag
+    let search_result = search('</style>', 'W')
+
+    if search_result > 0
+        " Enter visual line mode and select up to the </style> tag
+        normal! V
+        call cursor(line('.'), col('$'))
+    else
+        " Restore position if no </style> tag is found
+        call setpos('.', save_pos)
+        echo "No </style> tag found."
+    endif
+endfunction
